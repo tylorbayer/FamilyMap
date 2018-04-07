@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="fmc.ui.MainActivity" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin" >
+
+        <EditText
+            android:id="@+id/serv_host"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle"
+            android:textColorHint="@color/white"
+            android:hint="@string/serv_host"
+            android:inputType="text"
+            android:text="192.168.1.224" />
+
+        <EditText
+            android:id="@+id/serv_port"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle"
+            android:textColorHint="@color/white"
+            android:layout_below="@id/serv_host"
+            android:hint="@string/serv_port"
+            android:inputType="number"
+            android:text="8800" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/serv_port"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/loginFrameLayout" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginFrameLayout"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/registerFrameLayout" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextStyle"
+            android:layout_below="@id/registerFrameLayout"
+            android:text="@string/register"
+            android:id="@+id/chkRegister" />
+
+        <Button
+            android:id="@+id/btnLogReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chkRegister"
+            android:layout_centerHorizontal="true"
+            android:text="@string/login"
+            tools:text="Login" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/mapFrameLayout" />
+</RelativeLayout>

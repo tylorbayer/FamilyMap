@@ -1,0 +1,40 @@
+CREATE TABLE `AuthTokens` (
+	`AuthToken`	TEXT NOT NULL UNIQUE,
+	`PersonID`	TEXT NOT NULL
+);
+
+CREATE TABLE `Events` (
+	`EventID`	TEXT NOT NULL UNIQUE,
+	`Descendant`	TEXT NOT NULL,
+	`PersonID`	TEXT NOT NULL,
+	`Latitude`	INTEGER NOT NULL,
+	`Longitude`	INTEGER NOT NULL,
+	`Country`	TEXT NOT NULL,
+	`City`	TEXT NOT NULL,
+	`EventType`	TEXT NOT NULL,
+	`Year`	INTEGER NOT NULL,
+	PRIMARY KEY(`EventID`)
+);
+
+CREATE TABLE `Persons` (
+	`PersonID`	TEXT NOT NULL UNIQUE,
+	`Descendant`	TEXT NOT NULL,
+	`FirstName`	TEXT NOT NULL,
+	`LastName`	TEXT NOT NULL,
+	`Gender`	TEXT NOT NULL CHECK(Gender IN ( "f" , "m" )),
+	`FatherID`	TEXT,
+	`MotherID`	TEXT,
+	`SpouseID`	TEXT,
+	PRIMARY KEY(`PersonID`)
+);
+
+CREATE TABLE `Users` (
+	`Username`	TEXT NOT NULL UNIQUE,
+	`Password`	TEXT NOT NULL,
+	`Email`	TEXT NOT NULL,
+	`FirstName`	TEXT NOT NULL,
+	`LastName`	TEXT NOT NULL,
+	`Gender`	TEXT NOT NULL CHECK(Gender IN ( 'f' , 'm' )),
+	`PersonID`	TEXT NOT NULL UNIQUE,
+	PRIMARY KEY(`PersonID`)
+);
