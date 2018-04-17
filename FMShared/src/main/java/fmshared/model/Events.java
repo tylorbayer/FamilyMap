@@ -1,11 +1,13 @@
 package fmshared.model;
 
 
+import java.io.Serializable;
+
 /** A class to store Event information from the FMS database and use in memory
  *
  * @author TylorBayer
  */
-public class Events extends FMSModel {
+public class Events extends FMSModel implements Serializable {
     /** Unique identifier for this event */
     private String eventID;
     /** User (username) to which this person belongs */

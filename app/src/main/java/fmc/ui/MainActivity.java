@@ -18,6 +18,7 @@ import com.joanzapata.iconify.fonts.FontAwesomeModule;
 
 import java.net.URL;
 
+import fmc.model.Model;
 import fmc.server.Proxy;
 import fmshared.fmrequest.LoginRequest;
 import fmshared.fmrequest.RegisterRequest;
@@ -26,6 +27,7 @@ import fmshared.model.Persons;
 
 
 public class MainActivity extends FragmentActivity implements Proxy.Context {
+    private Model model = Model.getInstance();
 
     private LoginFragment loginFragment;
     private RegisterFragment registerFragment;
@@ -35,12 +37,13 @@ public class MainActivity extends FragmentActivity implements Proxy.Context {
     private EditText edtServHost;
     private EditText edtServPort;
 
-    public static String hostNum;
-    public static int portNum;
-    public static LoginRequest logReq;
-    public static String authToken;
+    private String hostNum;
+    private int portNum;
 
-    public static Gson gson = new Gson();
+    private LoginRequest logReq;
+    private String authToken;
+
+    private Gson gson = new Gson();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -136,7 +139,7 @@ public class MainActivity extends FragmentActivity implements Proxy.Context {
         this.authToken = authToken;
 
         if (!passed)
-            Toast.makeText(this, "Login or Register failed. Try again.", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, "Login or Register failed. Host or Port may be wrong. Try again.", Toast.LENGTH_LONG).show();
         else {
             if (type.equals("login")) {
                 mapFragment = MapFragment.newInstance();
@@ -150,35 +153,44 @@ public class MainActivity extends FragmentActivity implements Proxy.Context {
     }
 
     @Override
-    public void populateMap(Events[] events) {
-        mapFragment.populateMap(events);
+    public void populateMap(Events[] events, Persons[] persons) {
+        model.setHostNum(hostNum);
+        model.setPortNum(portNum);
+        model.setLogReq(logReq);
+        model.setAuthToken(authToken);
+        mapFragment.populateMap(events, persons);
     }
 
     @Override
-    public void populateEvent(Events event, Persons person) {
-
-    }
-
-    @Override
-    public void rePopulateMap(Events[] events) {}
+    public void rePopulateMap(Events[] events, Persons[] persons) {}
 
     public boolean checkInput() {
         return !(edtServHost.getText().length() == 0 || edtServPort.getText().length() == 0);
     }
 
     public void login(LoginRequest logReq) throws Exception {
-        hostNum = edtServHost.getText().toString();
-        portNum = Integer.parseInt(edtServPort.getText().toString());
+        try {
+            hostNum = edtServHost.getText().toString();
+            portNum = Integer.parseInt(edtServPort.getText().toString());
 
-        Proxy proxy = new Proxy(gson.toJson(logReq), this, "login", hostNum, portNum);
-        proxy.execute(new URL("http", hostNum, portNum, "user/login"));
+            Proxy proxy = new Proxy(gson.toJson(logReq), this, "login", hostNum, portNum);
+            proxy.execute(new URL("http", hostNum, portNum, "user/login"));
+        }
+        catch (Exception e) {
+            Toast.makeText(this, "Login failed. Host or Port may be wrong. Try again.", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void register(RegisterRequest regReq) throws Exception {
-        hostNum = edtServHost.getText().toString();
-        portNum = Integer.parseInt(edtServPort.getText().toString());
+        try {
+            hostNum = edtServHost.getText().toString();
+            portNum = Integer.parseInt(edtServPort.getText().toString());
 
-        Proxy proxy = new Proxy(gson.toJson(regReq), this, "register", hostNum, portNum);
-        proxy.execute(new URL("http", hostNum, portNum, "user/register"));
+            Proxy proxy = new Proxy(gson.toJson(regReq), this, "register", hostNum, portNum);
+            proxy.execute(new URL("http", hostNum, portNum, "user/register"));
+        }
+        catch (Exception e) {
+            Toast.makeText(this, "Register failed. Host or Port may be wrong. Try again.", Toast.LENGTH_LONG).show();
+        }
     }
 }

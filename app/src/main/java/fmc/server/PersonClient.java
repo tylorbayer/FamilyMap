@@ -18,7 +18,7 @@ class PersonClient {
     private static Gson gson = new Gson();
 
     Persons[] getUrl(URL url, String authToken) throws Exception {
-        Log.d("Debug", "getURL called");
+        Log.d("Debug", "getURL Person called");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setRequestMethod("GET");
         connection.setRequestProperty("Content-Type", "application/json");

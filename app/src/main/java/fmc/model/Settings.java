@@ -1,6 +1,8 @@
 package fmc.model;
 
 
+import android.graphics.Color;
+
 import java.io.Serializable;
 
 public class Settings implements Serializable {
@@ -20,6 +22,10 @@ public class Settings implements Serializable {
         return lifeColor;
     }
 
+    public int getLifeLineColor() {
+        return getColor(lifeColor);
+    }
+
     public void setLifeColor(String lifeColor) {
         this.lifeColor = lifeColor;
     }
@@ -28,12 +34,20 @@ public class Settings implements Serializable {
         return familyColor;
     }
 
+    public int getFamilyLineColor() {
+        return getColor(familyColor);
+    }
+
     public void setFamilyColor(String familyColor) {
         this.familyColor = familyColor;
     }
 
     public String getSpouseColor() {
         return spouseColor;
+    }
+
+    public int getSpouseLineColor() {
+        return getColor(spouseColor);
     }
 
     public void setSpouseColor(String spouseColor) {
@@ -78,6 +92,20 @@ public class Settings implements Serializable {
 
     public void setResync(boolean resync) {
         this.resync = resync;
+    }
+
+    private int getColor(String color) {
+        switch (color) {
+            case "Red":
+                return Color.RED;
+            case "Green":
+                return Color.GREEN;
+            case "Blue":
+                return Color.BLUE;
+            case "Yellow":
+                return Color.YELLOW;
+        }
+        return Color.DKGRAY;
     }
 
     @Override

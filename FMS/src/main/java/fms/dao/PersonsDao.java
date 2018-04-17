@@ -98,6 +98,8 @@ public class PersonsDao extends FMSDao {
     public static Persons[] getAll(String username) throws DatabaseException, SQLException {
         String sqlQuery = "SELECT * FROM Persons WHERE Descendant = ?";
 
+        logger.info("getAll called");
+
         try {
             String[] values = {username};
 

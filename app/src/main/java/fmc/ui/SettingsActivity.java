@@ -13,10 +13,13 @@ import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
 
+import fmc.model.Model;
 import fmc.model.Settings;
 
 
 public class SettingsActivity extends Activity implements AdapterView.OnItemSelectedListener {
+
+    private Model model = Model.getInstance();
 
     public static String EXTRA_RESULT = "result";
 
@@ -28,7 +31,7 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        settings = (Settings) getIntent().getSerializableExtra("Settings");
+        settings = model.getSettings();
 
         settings.setResync(false);
 
@@ -177,6 +180,9 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
                 break;
             case "Blue":
                 mySpinner.setSelection(2);
+                break;
+            case "Yellow":
+                mySpinner.setSelection(3);
                 break;
         }
     }

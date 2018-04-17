@@ -1,38 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context="fmc.ui.FiltersActivity" >
+    tools:context="fmc.ui.FiltersActivity">
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:paddingBottom="@dimen/activity_vertical_margin"
-        android:paddingLeft="@dimen/activity_horizontal_margin"
-        android:paddingRight="@dimen/activity_horizontal_margin"
-        android:paddingTop="@dimen/activity_vertical_margin" >
 
-        <EditText
-            android:id="@+id/serv_host"
-            android:layout_width="match_parent"
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/filter_recycler"/>-->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/settings_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsMainTextStyle"
+                android:text="@string/father_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsSubTextStyle"
+                android:text="@string/father_sub" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/father_filter_switch"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/TextStyle"
-            android:textColorHint="@color/white"
-            android:hint="@string/serv_host"
-            android:inputType="text"
-            android:text="Filters Act" />
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom">
 
-        <EditText
-            android:id="@+id/serv_port"
-            android:layout_width="match_parent"
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/settings_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsMainTextStyle"
+                android:text="@string/mother_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsSubTextStyle"
+                android:text="@string/mother_sub" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/mother_filter_switch"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/TextStyle"
-            android:textColorHint="@color/white"
-            android:layout_below="@id/serv_host"
-            android:hint="@string/serv_port"
-            android:inputType="number"
-            android:text="poooop" />
-    </RelativeLayout>
-</RelativeLayout>
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/settings_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsMainTextStyle"
+                android:text="@string/male_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsSubTextStyle"
+                android:text="@string/male_sub" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/male_filter_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/settings_margin_right">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsMainTextStyle"
+                android:text="@string/female_main" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/SettingsSubTextStyle"
+                android:text="@string/female_sub" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/female_filter_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+</LinearLayout>

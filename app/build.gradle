@@ -31,4 +31,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.2.4'
     compile 'com.joanzapata.iconify:android-iconify:2.2.2'
     compile 'com.joanzapata.iconify:android-iconify-fontawesome:2.2.2'
+    compile 'com.bignerdranch.android:expandablerecyclerview:1.0.3'
 }

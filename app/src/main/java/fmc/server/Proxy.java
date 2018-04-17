@@ -16,14 +16,13 @@ public class Proxy extends AsyncTask<URL, Integer, Long> {
     private int portNum;
     private String authToken;
     private Events[] events;
-    private Persons[] persons;
+    private Persons[] persons = null;
     private boolean passed = true;
 
     public interface Context {
         void logRegPassed(boolean passed, String type, String authToken);
-        void populateMap(Events[] events);
-        void rePopulateMap(Events[] events);
-        void populateEvent(Events event, Persons person);
+        void populateMap(Events[] events, Persons[] persons);
+        void rePopulateMap(Events[] events, Persons[] persons);
     }
 
     private Context context;
@@ -63,23 +62,11 @@ public class Proxy extends AsyncTask<URL, Integer, Long> {
                     authToken = registerClient.getUrl(url, reqBody);
                 }
             }
-            else if (type.equals("event")) {
-                EventClient eventClient = new EventClient();
-
-                for (URL url : urls) {
-                    events = eventClient.getUrl(url, authToken);
-                }
-
-                String personFile = "person/" + events[0].getPersonID();
-
-                PersonClient personClient = new PersonClient();
-                persons = personClient.getUrl(new URL("http", hostNum, portNum, personFile), authToken);
-
-                return success;
-            }
 
             EventClient eventClient = new EventClient();
             events = eventClient.getUrl(new URL("http", hostNum, portNum, "event"), authToken);
+            PersonClient personClient = new PersonClient();
+            persons = personClient.getUrl(new URL("http", hostNum, portNum, "person"), authToken);
         }
         catch (Exception e) {
             passed = false;
@@ -90,17 +77,12 @@ public class Proxy extends AsyncTask<URL, Integer, Long> {
     }
 
     protected void onPostExecute(Long result) {
-        if (!type.equals("event")) {
-            if (!passed)
-                context.logRegPassed(false, type, authToken);
-            else {
-                context.logRegPassed(true, type, authToken);
-            }
-            context.populateMap(events);
-            context.rePopulateMap(events);
-        }
+        if (!passed || events == null || persons == null)
+            context.logRegPassed(false, type, authToken);
         else {
-            context.populateEvent(events[0], persons[0]);
+            context.logRegPassed(true, type, authToken);
+            context.populateMap(events, persons);
+            context.rePopulateMap(events, persons);
         }
     }
 }

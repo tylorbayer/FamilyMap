@@ -18,7 +18,7 @@ class RegisterClient {
     private static Gson gson = new Gson();
 
     String getUrl(URL url, String reqBody) throws Exception {
-        Log.d("Debug", "getURL called");
+        Log.d("Debug", "getURL Register called");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setDoInput(true);
         connection.setDoOutput(true);

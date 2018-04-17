@@ -2,7 +2,6 @@ package fmc.ui;
 
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -16,8 +15,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -25,51 +24,81 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
+import com.google.gson.Gson;
 import com.joanzapata.iconify.IconDrawable;
 import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashSet;
 
 import fmc.model.Filters;
+import fmc.model.Model;
 import fmc.model.Settings;
 import fmc.server.Proxy;
+import fmshared.fmrequest.LoginRequest;
 import fmshared.model.Events;
 import fmshared.model.Persons;
 
 import static android.app.Activity.RESULT_OK;
-import static fmc.ui.MainActivity.authToken;
-import static fmc.ui.MainActivity.hostNum;
-import static fmc.ui.MainActivity.logReq;
-import static fmc.ui.MainActivity.portNum;
-import static fmc.ui.MainActivity.gson;
 
 public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleMap.OnMarkerClickListener, Proxy.Context {
 
-    private static GoogleMap mMap;
+    private Model model = Model.getInstance();
+
+    public String hostNum;
+    public int portNum;
+
+    private LoginRequest logReq;
+    private String authToken;
+
+    private Gson gson = new Gson();
+
+    private GoogleMap mMap;
     private Events[] events;
-    View v;
+    private Events currentEvent = null;
+    private Persons[] persons;
+    private Persons currentPerson;
+    private View v;
     private Marker currentMarker = null;
     private final int REQ_CODE_SETTINGS = 1;
     private final int REQ_CODE_FILTERS = 2;
 
     private static Settings settings = new Settings();
+    private static ArrayList<Filters> filters = new ArrayList<>();
+
+    private ArrayList<Polyline> polylines = new ArrayList<>();
 
     private ArrayList<Marker> mMarkerArray;
 
-    public MapFragment() {
-        // Required empty public constructor
-    }
+    public MapFragment() {}
 
     public static MapFragment newInstance() {
         return new MapFragment();
+    }
+
+    public static MapFragment newInstance(Events currentEvent) {
+        MapFragment mapFrag = new MapFragment();
+
+        Bundle args = new Bundle();
+        args.putSerializable("Event", currentEvent);
+        mapFrag.setArguments(args);
+
+        return mapFrag;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setHasOptionsMenu(true);
+        hostNum = model.getHostNum();
+        portNum = model.getPortNum();
+        logReq = model.getLogReq();
+        authToken = model.getAuthToken();
+        events = model.getEvents();
+        persons = model.getPersons();
     }
 
     @Override
@@ -88,31 +117,62 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         eventInfo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent personActivity = new Intent(getContext(), PersonActivity.class);
-                startActivity(personActivity);
+                if (currentEvent != null) {
+                    Intent personActivity = new Intent(getContext(), PersonActivity.class);
+                    personActivity.putExtra("Person", currentPerson);
+                    startActivity(personActivity);
+                }
             }
         });
+
+        Bundle args = getArguments();
+        if (args != null) {
+            currentEvent = (Events) args.getSerializable("Event");
+
+            for (Persons person: persons) {
+                if (currentEvent.getPersonID().equals(person.getPersonID())) {
+                    currentPerson = person;
+                }
+            }
+
+            TextView dataMain = v.findViewById(R.id.data_main);
+            String mainText = currentPerson.getFirstName() + " " + currentPerson.getLastName();
+            dataMain.setText(mainText);
+
+            TextView dataSub = v.findViewById(R.id.data_sub);
+            String subText = currentEvent.getEventType() + ": " + currentEvent.getCity() + ", " + currentEvent.getCountry() +
+                    " (" + currentEvent.getYear() + ")";
+            dataSub.setText(subText);
+
+            if (currentPerson.getGender().equals("m"))
+                dataIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_male).colorRes(R.color.male_icon).sizeDp(40);
+            else
+                dataIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_female).colorRes(R.color.female_icon).sizeDp(40);
+
+            dataImageView = v.findViewById(R.id.data_image);
+            dataImageView.setImageDrawable(dataIcon);
+        }
 
         return v;
     }
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-        inflater.inflate(R.menu.map_frag_menu, menu);
+        if (currentEvent == null) {
+            inflater.inflate(R.menu.map_frag_menu, menu);
 
-        MenuItem searchItem = menu.findItem(R.id.search_item);
-        Drawable searchIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_search).colorRes(R.color.white).sizeDp(25);
-        searchItem.setIcon(searchIcon);
+            MenuItem searchItem = menu.findItem(R.id.search_item);
+            Drawable searchIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_search).colorRes(R.color.white).sizeDp(25);
+            searchItem.setIcon(searchIcon);
 
-        MenuItem filterItem = menu.findItem(R.id.filters_item);
-        Drawable filterIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_filter).colorRes(R.color.white).sizeDp(25);
-        filterItem.setIcon(filterIcon);
+            MenuItem filterItem = menu.findItem(R.id.filters_item);
+            Drawable filterIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_filter).colorRes(R.color.white).sizeDp(25);
+            filterItem.setIcon(filterIcon);
 
-        MenuItem settingsItem = menu.findItem(R.id.settings_item);
-        Drawable settingsIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_gear).colorRes(R.color.white).sizeDp(25);
-        settingsItem.setIcon(settingsIcon);
-
-
+            MenuItem settingsItem = menu.findItem(R.id.settings_item);
+            Drawable settingsIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_gear).colorRes(R.color.white).sizeDp(25);
+            settingsItem.setIcon(settingsIcon);
+        }
         super.onCreateOptionsMenu(menu, inflater);
     }
 
@@ -121,15 +181,19 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         switch (item.getItemId()) {
             case R.id.search_item:
                 Intent searchActivity = new Intent(getContext(), SearchActivity.class);
+                searchActivity.putExtra("Persons", persons);
+                searchActivity.putExtra("Events", events);
+                searchActivity.putExtra("host", hostNum);
+                searchActivity.putExtra("port", portNum);
                 startActivity(searchActivity);
                 return true;
             case R.id.filters_item:
                 Intent filtersActivity = new Intent(getContext(), FiltersActivity.class);
+                filtersActivity.putExtra("Filters", filters);
                 startActivityForResult(filtersActivity, REQ_CODE_FILTERS);
                 return true;
             case R.id.settings_item:
                 Intent settingsActivity = new Intent(getContext(), SettingsActivity.class);
-                settingsActivity.putExtra("Settings", settings);
                 startActivityForResult(settingsActivity, REQ_CODE_SETTINGS);
                 return true;
             default:
@@ -142,11 +206,15 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         mMap = googleMap;
         mMarkerArray = new ArrayList<>();
 
+        HashSet<String> eventTypes = new HashSet<>();
+
         for (Events event: events) {
             LatLng latLng = new LatLng(Double.parseDouble(event.getLatitude()), Double.parseDouble(event.getLongitude()));
 
             String eventType = event.getEventType();
             Float color;
+
+            eventTypes.add(eventType);
 
             switch (eventType) {
                 case "birth":
@@ -171,19 +239,51 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
             mMarkerArray.add(marker);
         }
 
+        filters.add(new Filters("Father"));
+        filters.add(new Filters("Mother"));
+        filters.add(new Filters("Male"));
+        filters.add(new Filters("Female"));
+
+        for (String eventType: eventTypes) {
+            Filters filter = new Filters(eventType);
+
+            filters.add(filter);
+        }
+
         mMap.setOnMarkerClickListener(this);
+
+        if (currentEvent!= null) {
+            mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(Double.parseDouble(currentEvent.getLatitude()),
+                    Double.parseDouble(currentEvent.getLongitude())), 5.0f));
+
+            for (Marker marker: mMarkerArray) {
+                if (marker.getTitle().equals(currentEvent.getEventID())) {
+                    currentMarker = marker;
+                }
+            }
+        }
+
+        drawLines();
     }
 
 
     @Override
-    public void populateMap(Events[] events) {
+    public void populateMap(Events[] events, Persons[] persons) {
         this.events = events;
+        this.persons = persons;
+
+        model.setEvents(events);
+        model.setPersons(persons);
     }
 
     @Override
-    public void rePopulateMap(Events[] events) {
+    public void rePopulateMap(Events[] events, Persons[] persons) {
         this.events = events;
+        this.persons = persons;
         mMarkerArray = new ArrayList<>();
+
+        model.setEvents(events);
+        model.setPersons(persons);
 
         for (Events event: events) {
             LatLng latLng = new LatLng(Double.parseDouble(event.getLatitude()), Double.parseDouble(event.getLongitude()));
@@ -222,39 +322,41 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     public void logRegPassed(boolean passed, String type, String authToken) {}
 
     @Override
-    public void populateEvent(Events event, Persons person) {
+    public boolean onMarkerClick(final Marker marker) {
+        currentMarker = marker;
+
+        removeLines();
+
+        for (Persons person: persons) {
+            if (currentMarker.getSnippet().equals(person.getPersonID())) {
+                currentPerson = person;
+            }
+        }
+
+        for (Events event: events) {
+            if (currentMarker.getTitle().equals(event.getEventID())) {
+                currentEvent = event;
+            }
+        }
+
         TextView dataMain = v.findViewById(R.id.data_main);
-        String mainText = person.getFirstName() + " " + person.getLastName();
+        String mainText = currentPerson.getFirstName() + " " + currentPerson.getLastName();
         dataMain.setText(mainText);
 
         TextView dataSub = v.findViewById(R.id.data_sub);
-        String subText = event.getEventType() + ": " + event.getCity() + ", " + event.getCountry() +
-                " (" + event.getYear() + ")";
+        String subText = currentEvent.getEventType() + ": " + currentEvent.getCity() + ", " + currentEvent.getCountry() +
+                " (" + currentEvent.getYear() + ")";
         dataSub.setText(subText);
 
         Drawable dataIcon;
 
-        if (person.getGender().equals("m"))
+        if (currentPerson.getGender().equals("m"))
             dataIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_male).colorRes(R.color.male_icon).sizeDp(40);
         else
             dataIcon = new IconDrawable(getActivity(), FontAwesomeIcons.fa_female).colorRes(R.color.female_icon).sizeDp(40);
 
         ImageView dataImageView = v.findViewById(R.id.data_image);
         dataImageView.setImageDrawable(dataIcon);
-    }
-
-    @Override
-    public boolean onMarkerClick(final Marker marker) {
-        currentMarker = marker;
-
-        Proxy proxy = new Proxy("", this, "event", hostNum, portNum, authToken);
-        try {
-            String file = "event/" + marker.getTitle();
-            proxy.execute(new URL("http", hostNum, portNum, file));
-        }
-        catch (Exception e) {
-            Log.d("DEBUG", e.getMessage());
-        }
 
         drawLines();
 
@@ -265,10 +367,10 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
-        String result;
+        removeLines();
 
         if (requestCode == REQ_CODE_SETTINGS && resultCode == RESULT_OK && data != null) {
-            settings = SettingsActivity.getResult(data);
+            settings = model.getSettings();
 
             if (settings.isResync()) {
                 mMap.clear();
@@ -281,38 +383,73 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
                 }
             }
 
-            String mapType = settings.getMapType();
-            if (mMap != null) {
-                switch (mapType) {
-                    case "Normal":
-                        mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-                        break;
-                    case "Hybrid":
-                        Toast.makeText(getContext(), mapType, Toast.LENGTH_SHORT).show();
-                        mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
-                        break;
-                    case "Satellite":
-                        Toast.makeText(getContext(), mapType, Toast.LENGTH_SHORT).show();
-                        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
-                        break;
-                    case "Terrain":
-                        mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
-                        break;
-                }
-            }
+            drawLines();
         }
         else if (requestCode == REQ_CODE_FILTERS && resultCode == RESULT_OK && data != null) {
-            result = FiltersActivity.getResult(data);
-            Toast.makeText(getContext(), result, Toast.LENGTH_SHORT).show();
+            filters = FiltersActivity.getResult(data);
         }
     }
 
     private void drawLines() {
-        for (Marker marker: mMarkerArray) {
-            if (currentMarker.getSnippet().equals(marker.getSnippet()) && !currentMarker.getTitle().equals(marker.getTitle())) {
-                mMap.addPolyline(new PolylineOptions()
-                .add(currentMarker.getPosition(), marker.getPosition())
-                .color(Color.BLUE));
+        setMapType();
+        settings = model.getSettings();
+        if (currentMarker != null) {
+            for (Marker marker : mMarkerArray) {
+                if (settings.isLifeLines()) {
+                    if (currentMarker.getSnippet().equals(marker.getSnippet()) && !currentMarker.getTitle().equals(marker.getTitle())) {
+                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                                .add(currentMarker.getPosition(), marker.getPosition())
+                                .color(settings.getLifeLineColor()));
+
+                        polylines.add(polyline);
+                    }
+                }
+
+                if (settings.isFamilyLines()) {
+                    if (currentPerson.getMotherID().equals(marker.getSnippet()) || currentPerson.getFatherID().equals(marker.getSnippet())) {
+                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                                .add(currentMarker.getPosition(), marker.getPosition())
+                                .color(settings.getFamilyLineColor()));
+
+                        polylines.add(polyline);
+                    }
+                }
+                if (settings.isSpouseLines()) {
+                    if (currentPerson.getSpouseID().equals(marker.getSnippet())) {
+                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                                .add(currentMarker.getPosition(), marker.getPosition())
+                                .color(settings.getSpouseLineColor()));
+
+                        polylines.add(polyline);
+                    }
+                }
+            }
+        }
+    }
+
+    private void removeLines() {
+        for (Polyline polyline: polylines) {
+            polyline.remove();
+        }
+        polylines = new ArrayList<>();
+    }
+
+    private void setMapType() {
+        String mapType = settings.getMapType();
+        if (mMap != null) {
+            switch (mapType) {
+                case "Normal":
+                    mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                    break;
+                case "Hybrid":
+                    mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                    break;
+                case "Satellite":
+                    mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                    break;
+                case "Terrain":
+                    mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+                    break;
             }
         }
     }

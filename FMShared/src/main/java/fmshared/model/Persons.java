@@ -1,13 +1,14 @@
 package fmshared.model;
 
 
+import java.io.Serializable;
 import java.util.Arrays;
 
 /** A class to store Person information from the FMS database and use in memory
  *
  * @author TylorBayer
  */
-public class Persons extends FMSModel {
+public class Persons extends FMSModel implements Serializable {
     /** Unique identifier for this person */
     private String personID;
     /** User (username) to which this person belongs */
@@ -75,6 +76,10 @@ public class Persons extends FMSModel {
 
     public String getMotherID() {
         return mother;
+    }
+
+    public String getSpouseID() {
+        return spouse;
     }
 
     public String getDescendant() {
