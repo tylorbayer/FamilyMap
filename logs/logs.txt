@@ -1,1140 +1,481 @@
-Apr 17, 2018 7:18:54 AM fms.Server run
+Apr 18, 2018 7:55:33 AM fms.Server run
 INFO: Initializing HTTP Server
-Apr 17, 2018 7:18:55 AM fms.Server run
+Apr 18, 2018 7:55:33 AM fms.Server run
 INFO: Creating contexts
-Apr 17, 2018 7:18:55 AM fms.Server run
+Apr 18, 2018 7:55:33 AM fms.Server run
 INFO: Starting HTTP server
-Apr 17, 2018 7:20:37 AM LoginHandler handle
+Apr 18, 2018 7:56:38 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:20:39 AM LoginHandler handle
+Apr 18, 2018 7:56:39 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 7:20:39 AM EventHandler handle
+Apr 18, 2018 7:56:39 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:20:39 AM EventsHandler handle
+Apr 18, 2018 7:56:40 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 7:20:39 AM PersonHandler handle
+Apr 18, 2018 7:56:40 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:20:39 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 7:56:40 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 7:20:39 AM PersonHandler handle
+Apr 18, 2018 7:56:40 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 7:24:10 AM LoginHandler handle
+Apr 18, 2018 8:02:04 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:24:10 AM LoginHandler handle
+Apr 18, 2018 8:02:04 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 7:24:10 AM EventHandler handle
+Apr 18, 2018 8:02:04 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:24:10 AM EventsHandler handle
+Apr 18, 2018 8:02:04 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 7:24:11 AM PersonHandler handle
+Apr 18, 2018 8:02:04 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:24:11 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 8:02:04 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 7:24:11 AM PersonHandler handle
+Apr 18, 2018 8:02:04 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 7:26:54 AM LoginHandler handle
+Apr 18, 2018 8:04:15 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:26:54 AM LoginHandler handle
+Apr 18, 2018 8:04:15 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 7:26:54 AM EventHandler handle
+Apr 18, 2018 8:04:15 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:26:54 AM EventsHandler handle
+Apr 18, 2018 8:04:15 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 7:26:54 AM PersonHandler handle
+Apr 18, 2018 8:04:16 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 7:26:54 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 8:04:16 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 7:26:54 AM PersonHandler handle
+Apr 18, 2018 8:04:16 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 8:35:45 AM LoginHandler handle
+Apr 18, 2018 8:05:57 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:35:45 AM LoginHandler handle
+Apr 18, 2018 8:05:57 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 8:35:46 AM EventHandler handle
+Apr 18, 2018 8:05:57 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:35:46 AM EventsHandler handle
+Apr 18, 2018 8:05:57 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 8:35:46 AM PersonHandler handle
+Apr 18, 2018 8:05:58 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:35:46 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 8:05:58 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 8:35:46 AM PersonHandler handle
+Apr 18, 2018 8:05:58 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 8:46:26 AM LoginHandler handle
+Apr 18, 2018 8:08:08 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:46:26 AM LoginHandler handle
+Apr 18, 2018 8:08:08 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 8:46:26 AM EventHandler handle
+Apr 18, 2018 8:08:08 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:46:26 AM EventsHandler handle
+Apr 18, 2018 8:08:08 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 8:46:26 AM PersonHandler handle
+Apr 18, 2018 8:08:08 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:46:27 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 8:08:08 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 8:46:27 AM PersonHandler handle
+Apr 18, 2018 8:08:08 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 8:50:07 AM LoginHandler handle
+Apr 18, 2018 8:11:55 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:50:07 AM LoginHandler handle
+Apr 18, 2018 8:11:55 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 8:50:07 AM EventHandler handle
+Apr 18, 2018 8:11:55 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:50:07 AM EventsHandler handle
+Apr 18, 2018 8:11:55 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 8:50:07 AM PersonHandler handle
+Apr 18, 2018 8:11:55 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 8:50:07 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 8:11:56 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 8:50:07 AM PersonHandler handle
+Apr 18, 2018 8:11:56 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 11:27:52 AM LoginHandler handle
+Apr 18, 2018 8:51:28 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 11:27:52 AM LoginHandler handle
+Apr 18, 2018 8:51:28 AM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 8:51:28 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 11:27:52 AM EventHandler handle
+Apr 18, 2018 8:51:32 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 11:27:52 AM EventsHandler handle
+Apr 18, 2018 8:51:32 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 11:27:52 AM PersonHandler handle
+Apr 18, 2018 8:51:33 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 11:27:53 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:27:53 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:29:59 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:29:59 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:29:59 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:29:59 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:29:59 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:29:59 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:29:59 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:30:41 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:30:41 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:30:41 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:30:41 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:30:41 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:30:41 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:30:41 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:30:56 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:30:56 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:30:56 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:30:56 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:30:56 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:30:56 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:30:56 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:34:31 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:34:31 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:34:31 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:34:31 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:34:31 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:34:31 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:34:31 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:47:19 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:47:19 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:47:19 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:47:19 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:47:19 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:47:19 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:47:19 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:48:53 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:48:53 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:48:53 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:48:53 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:48:53 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:48:53 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:48:53 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 11:51:20 AM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:51:20 AM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 11:51:20 AM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:51:20 AM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 11:51:20 AM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 11:51:20 AM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 11:51:20 AM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:00:05 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:00:05 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:00:05 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:00:05 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:00:05 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:00:05 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:00:05 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:03:48 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:03:48 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:03:48 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:03:48 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:03:49 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:03:49 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:03:49 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:06:04 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:06:04 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:06:04 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:06:04 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:06:04 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:06:04 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:06:04 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:10:07 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:10:07 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:10:08 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:10:08 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:10:08 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:10:08 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:10:08 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:13:00 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:13:00 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:13:00 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:13:00 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:13:00 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:13:00 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:13:00 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:13:57 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:13:57 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:13:57 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:13:57 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:13:58 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:13:58 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:13:58 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:15:45 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:15:45 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:15:45 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:15:45 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:15:45 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:15:45 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:15:45 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:19:04 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:19:04 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:19:04 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:19:04 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:19:04 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:19:04 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:19:04 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:20:22 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:20:22 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:20:22 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:20:22 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:20:22 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:20:22 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:20:22 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:24:40 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:24:40 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:24:40 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:24:40 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:24:40 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:24:40 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:24:40 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:27:49 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:27:49 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:27:49 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:27:49 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:27:49 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:27:49 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:27:49 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:27:55 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:27:55 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:27:55 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:27:55 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:27:55 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:27:55 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:27:55 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:29:04 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:29:04 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:29:04 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:29:04 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:29:04 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:29:04 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:29:04 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:30:35 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:30:35 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:30:35 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:30:35 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:30:35 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:30:35 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:30:35 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:30:53 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:30:53 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:30:53 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:30:54 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:30:54 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:30:54 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:30:54 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:32:44 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:32:44 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:32:44 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:32:44 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:32:44 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:32:44 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:32:44 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:33:00 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:33:00 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:33:00 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:33:00 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:33:00 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:33:00 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:33:00 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:37:19 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:37:19 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:37:19 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:37:19 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:37:19 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:37:19 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:37:19 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:38:58 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:38:58 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:38:58 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:38:58 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:38:58 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:38:58 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:38:58 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:39:36 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:39:36 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:39:36 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:39:36 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:39:37 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:39:37 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:39:37 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:42:48 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:42:48 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:42:48 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:42:48 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:42:48 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:42:48 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:42:48 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:44:10 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:44:10 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:44:12 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:44:13 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:44:13 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:44:13 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:44:13 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:45:17 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:45:17 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:45:17 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:45:17 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:45:17 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:45:17 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:45:18 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 12:46:17 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:46:17 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 12:46:17 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:46:17 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 12:46:18 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 12:46:18 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 12:46:18 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 1:19:51 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 1:19:51 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 1:19:51 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 1:19:51 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 1:19:51 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 1:19:51 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 1:19:51 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 2:52:40 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:52:40 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 2:52:40 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:52:40 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 2:52:40 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:52:40 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 2:52:40 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 2:55:16 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:55:16 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 2:55:16 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:55:16 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 2:55:16 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:55:16 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 2:55:16 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 2:57:26 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:57:26 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 2:57:26 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:57:26 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 2:57:27 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:57:27 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 2:57:27 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 2:57:54 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:57:54 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 2:57:54 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:57:54 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 2:57:55 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 2:57:55 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 2:57:55 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:04:39 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:04:39 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:04:39 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:04:39 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:04:39 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:04:39 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:04:39 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:10:43 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:10:43 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:10:43 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:10:43 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:10:43 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:10:43 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:10:43 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:11:37 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:11:37 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:11:37 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:11:37 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:11:37 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:11:37 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:11:37 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:14:24 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:14:24 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:14:24 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:14:24 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:14:24 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:14:24 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:14:24 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:15:02 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:15:02 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:15:02 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:15:02 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:15:02 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:15:02 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:15:02 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:19:17 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:19:17 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:19:17 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:19:17 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:19:18 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:19:18 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:19:18 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:20:56 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:20:56 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:20:56 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:20:56 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:20:56 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:20:56 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:20:56 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:24:33 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:24:33 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:24:33 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:24:33 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:24:33 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:24:33 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:24:33 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:26:42 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:26:42 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:26:42 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:26:42 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:26:42 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:26:42 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:26:42 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:29:51 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:29:51 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:29:51 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:29:51 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:29:51 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:29:51 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:29:51 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:31:57 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:31:57 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:31:57 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:31:57 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:31:57 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:31:57 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:31:57 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:33:50 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:33:50 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:33:50 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:33:50 PM EventsHandler handle
-FINER: RETURN
-Apr 17, 2018 3:33:51 PM PersonHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:33:51 PM fms.dao.PersonsDao getAll
-INFO: getAll called
-Apr 17, 2018 3:33:51 PM PersonHandler handle
-FINER: RETURN
-Apr 17, 2018 3:35:33 PM LoginHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:35:33 PM LoginHandler handle
-FINER: RETURN
-Apr 17, 2018 3:35:33 PM EventHandler handle
-FINER: ENTRY
-Apr 17, 2018 3:35:33 PM EventsHandler handle
+Apr 18, 2018 8:51:33 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:35:33 PM PersonHandler handle
+Apr 18, 2018 8:51:33 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:35:33 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 8:51:33 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:35:33 PM PersonHandler handle
+Apr 18, 2018 8:51:33 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:37:22 PM LoginHandler handle
+Apr 18, 2018 9:01:38 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:37:22 PM LoginHandler handle
+Apr 18, 2018 9:01:38 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:37:22 PM EventHandler handle
+Apr 18, 2018 9:01:38 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:37:22 PM EventsHandler handle
+Apr 18, 2018 9:01:38 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:37:22 PM PersonHandler handle
+Apr 18, 2018 9:01:39 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:37:22 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:01:39 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:37:22 PM PersonHandler handle
+Apr 18, 2018 9:01:39 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:38:43 PM LoginHandler handle
+Apr 18, 2018 9:04:58 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:38:43 PM LoginHandler handle
+Apr 18, 2018 9:04:58 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:38:43 PM EventHandler handle
+Apr 18, 2018 9:04:58 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:38:43 PM EventsHandler handle
+Apr 18, 2018 9:04:58 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:38:43 PM PersonHandler handle
+Apr 18, 2018 9:04:59 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:38:43 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:04:59 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:38:43 PM PersonHandler handle
+Apr 18, 2018 9:04:59 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:40:08 PM LoginHandler handle
+Apr 18, 2018 9:05:44 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:40:08 PM LoginHandler handle
+Apr 18, 2018 9:05:44 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:40:08 PM EventHandler handle
+Apr 18, 2018 9:05:44 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:40:08 PM EventsHandler handle
+Apr 18, 2018 9:05:44 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:40:08 PM PersonHandler handle
+Apr 18, 2018 9:05:44 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:40:08 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:05:44 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:40:08 PM PersonHandler handle
+Apr 18, 2018 9:05:44 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:41:42 PM LoginHandler handle
+Apr 18, 2018 9:11:18 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:41:42 PM LoginHandler handle
+Apr 18, 2018 9:11:18 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:41:42 PM EventHandler handle
+Apr 18, 2018 9:11:19 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:41:42 PM EventsHandler handle
+Apr 18, 2018 9:11:19 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:41:42 PM PersonHandler handle
+Apr 18, 2018 9:11:19 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:41:42 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:11:19 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:41:42 PM PersonHandler handle
+Apr 18, 2018 9:11:19 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:42:01 PM LoginHandler handle
+Apr 18, 2018 9:11:23 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:42:01 PM LoginHandler handle
+Apr 18, 2018 9:11:23 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:42:01 PM EventHandler handle
+Apr 18, 2018 9:11:23 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:42:01 PM EventsHandler handle
+Apr 18, 2018 9:11:23 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:42:01 PM PersonHandler handle
+Apr 18, 2018 9:11:23 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:42:01 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:11:23 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:42:01 PM PersonHandler handle
+Apr 18, 2018 9:11:23 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:44:22 PM LoginHandler handle
+Apr 18, 2018 9:11:37 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:44:22 PM LoginHandler handle
+Apr 18, 2018 9:11:37 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:44:22 PM EventHandler handle
+Apr 18, 2018 9:11:37 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:44:22 PM EventsHandler handle
+Apr 18, 2018 9:11:37 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:44:22 PM PersonHandler handle
+Apr 18, 2018 9:11:38 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:44:22 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:11:38 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:44:22 PM PersonHandler handle
+Apr 18, 2018 9:11:38 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:46:56 PM LoginHandler handle
+Apr 18, 2018 9:18:50 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:46:56 PM LoginHandler handle
+Apr 18, 2018 9:18:50 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:46:56 PM EventHandler handle
+Apr 18, 2018 9:18:50 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:46:56 PM EventsHandler handle
+Apr 18, 2018 9:18:50 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:46:56 PM PersonHandler handle
+Apr 18, 2018 9:18:50 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:46:56 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:18:50 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:46:56 PM PersonHandler handle
+Apr 18, 2018 9:18:50 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:48:38 PM LoginHandler handle
+Apr 18, 2018 9:20:04 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:48:38 PM LoginHandler handle
+Apr 18, 2018 9:20:04 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:48:39 PM EventHandler handle
+Apr 18, 2018 9:20:04 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:48:39 PM EventsHandler handle
+Apr 18, 2018 9:20:04 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:48:39 PM PersonHandler handle
+Apr 18, 2018 9:20:04 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:48:39 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:20:04 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:48:39 PM PersonHandler handle
+Apr 18, 2018 9:20:04 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:50:20 PM LoginHandler handle
+Apr 18, 2018 9:22:32 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:50:20 PM LoginHandler handle
+Apr 18, 2018 9:22:32 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:50:20 PM EventHandler handle
+Apr 18, 2018 9:22:32 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:50:20 PM EventsHandler handle
+Apr 18, 2018 9:22:32 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:50:21 PM PersonHandler handle
+Apr 18, 2018 9:22:32 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:50:21 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:22:32 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:50:21 PM PersonHandler handle
+Apr 18, 2018 9:22:32 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:56:56 PM LoginHandler handle
+Apr 18, 2018 9:23:19 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:56:56 PM LoginHandler handle
+Apr 18, 2018 9:23:19 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:56:57 PM EventHandler handle
+Apr 18, 2018 9:23:19 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:56:57 PM EventsHandler handle
+Apr 18, 2018 9:23:19 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:56:57 PM PersonHandler handle
+Apr 18, 2018 9:23:19 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:56:57 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:23:19 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:56:57 PM PersonHandler handle
+Apr 18, 2018 9:23:19 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 3:58:40 PM LoginHandler handle
+Apr 18, 2018 9:24:17 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:58:40 PM LoginHandler handle
+Apr 18, 2018 9:24:17 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 3:58:40 PM EventHandler handle
+Apr 18, 2018 9:24:17 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:58:40 PM EventsHandler handle
+Apr 18, 2018 9:24:17 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 3:58:41 PM PersonHandler handle
+Apr 18, 2018 9:24:17 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 3:58:41 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:24:17 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 3:58:41 PM PersonHandler handle
+Apr 18, 2018 9:24:17 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:37:35 PM LoginHandler handle
+Apr 18, 2018 9:28:20 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:37:35 PM LoginHandler handle
+Apr 18, 2018 9:28:20 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:37:35 PM EventHandler handle
+Apr 18, 2018 9:28:20 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:37:35 PM EventsHandler handle
+Apr 18, 2018 9:28:20 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:37:35 PM PersonHandler handle
+Apr 18, 2018 9:28:20 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:37:35 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:28:20 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:37:35 PM PersonHandler handle
+Apr 18, 2018 9:28:20 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:37:48 PM LoginHandler handle
+Apr 18, 2018 9:29:44 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:37:48 PM LoginHandler handle
+Apr 18, 2018 9:29:44 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:37:48 PM EventHandler handle
+Apr 18, 2018 9:29:44 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:37:48 PM EventsHandler handle
+Apr 18, 2018 9:29:44 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:37:48 PM PersonHandler handle
+Apr 18, 2018 9:29:44 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:37:48 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:29:44 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:37:48 PM PersonHandler handle
+Apr 18, 2018 9:29:44 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:39:00 PM LoginHandler handle
+Apr 18, 2018 9:32:43 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:39:01 PM LoginHandler handle
+Apr 18, 2018 9:32:43 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:39:01 PM EventHandler handle
+Apr 18, 2018 9:32:43 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:39:01 PM EventsHandler handle
+Apr 18, 2018 9:32:43 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:39:01 PM PersonHandler handle
+Apr 18, 2018 9:32:43 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:39:01 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:32:43 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:39:01 PM PersonHandler handle
+Apr 18, 2018 9:32:43 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:41:22 PM LoginHandler handle
+Apr 18, 2018 9:34:18 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:41:22 PM LoginHandler handle
+Apr 18, 2018 9:34:18 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:41:22 PM EventHandler handle
+Apr 18, 2018 9:34:18 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:41:22 PM EventsHandler handle
+Apr 18, 2018 9:34:18 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:41:22 PM PersonHandler handle
+Apr 18, 2018 9:34:18 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:41:22 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:34:18 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:41:22 PM PersonHandler handle
+Apr 18, 2018 9:34:18 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:42:42 PM LoginHandler handle
+Apr 18, 2018 9:35:31 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:42:42 PM LoginHandler handle
+Apr 18, 2018 9:35:31 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:42:42 PM EventHandler handle
+Apr 18, 2018 9:35:31 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:42:42 PM EventsHandler handle
+Apr 18, 2018 9:35:31 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:42:42 PM PersonHandler handle
+Apr 18, 2018 9:35:31 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:42:42 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:35:31 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:42:42 PM PersonHandler handle
+Apr 18, 2018 9:35:31 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:51:38 PM LoginHandler handle
+Apr 18, 2018 9:36:22 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:51:38 PM LoginHandler handle
+Apr 18, 2018 9:36:22 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:51:38 PM EventHandler handle
+Apr 18, 2018 9:36:22 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:51:38 PM EventsHandler handle
+Apr 18, 2018 9:36:22 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:51:38 PM PersonHandler handle
+Apr 18, 2018 9:36:22 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:51:38 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:36:22 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:51:38 PM PersonHandler handle
+Apr 18, 2018 9:36:22 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 4:57:08 PM LoginHandler handle
+Apr 18, 2018 9:37:33 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:57:08 PM LoginHandler handle
+Apr 18, 2018 9:37:33 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 4:57:08 PM EventHandler handle
+Apr 18, 2018 9:37:33 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:57:08 PM EventsHandler handle
+Apr 18, 2018 9:37:33 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 4:57:09 PM PersonHandler handle
+Apr 18, 2018 9:37:33 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 4:57:09 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:37:33 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 4:57:09 PM PersonHandler handle
+Apr 18, 2018 9:37:33 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:03:45 PM LoginHandler handle
+Apr 18, 2018 9:39:50 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:03:45 PM LoginHandler handle
+Apr 18, 2018 9:39:50 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:03:45 PM EventHandler handle
+Apr 18, 2018 9:39:50 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:03:45 PM EventsHandler handle
+Apr 18, 2018 9:39:50 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:03:45 PM PersonHandler handle
+Apr 18, 2018 9:39:50 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:03:45 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:39:50 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:03:45 PM PersonHandler handle
+Apr 18, 2018 9:39:50 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:04:53 PM LoginHandler handle
+Apr 18, 2018 9:43:23 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:04:53 PM LoginHandler handle
+Apr 18, 2018 9:43:23 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:04:53 PM EventHandler handle
+Apr 18, 2018 9:43:23 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:04:53 PM EventsHandler handle
+Apr 18, 2018 9:43:23 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:04:53 PM PersonHandler handle
+Apr 18, 2018 9:43:23 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:04:53 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:43:23 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:04:53 PM PersonHandler handle
+Apr 18, 2018 9:43:23 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:07:51 PM LoginHandler handle
+Apr 18, 2018 9:54:08 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:07:52 PM LoginHandler handle
+Apr 18, 2018 9:54:08 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:07:52 PM EventHandler handle
+Apr 18, 2018 9:54:08 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:07:52 PM EventsHandler handle
+Apr 18, 2018 9:54:08 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:07:52 PM PersonHandler handle
+Apr 18, 2018 9:54:08 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:07:52 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:54:08 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:07:52 PM PersonHandler handle
+Apr 18, 2018 9:54:08 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:08:44 PM LoginHandler handle
+Apr 18, 2018 9:58:48 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:08:44 PM LoginHandler handle
+Apr 18, 2018 9:58:48 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:08:44 PM EventHandler handle
+Apr 18, 2018 9:58:48 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:08:44 PM EventsHandler handle
+Apr 18, 2018 9:58:48 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:08:44 PM PersonHandler handle
+Apr 18, 2018 9:58:48 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:08:44 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:58:48 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:08:44 PM PersonHandler handle
+Apr 18, 2018 9:58:48 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:12:39 PM LoginHandler handle
+Apr 18, 2018 9:59:23 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:12:39 PM LoginHandler handle
+Apr 18, 2018 9:59:23 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:12:39 PM EventHandler handle
+Apr 18, 2018 9:59:23 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:12:39 PM EventsHandler handle
+Apr 18, 2018 9:59:23 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:12:39 PM PersonHandler handle
+Apr 18, 2018 9:59:24 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:12:39 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 9:59:24 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:12:39 PM PersonHandler handle
+Apr 18, 2018 9:59:24 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:13:30 PM LoginHandler handle
+Apr 18, 2018 10:02:10 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:13:30 PM LoginHandler handle
+Apr 18, 2018 10:02:10 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:13:30 PM EventHandler handle
+Apr 18, 2018 10:02:10 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:13:30 PM EventsHandler handle
+Apr 18, 2018 10:02:10 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:13:30 PM PersonHandler handle
+Apr 18, 2018 10:02:10 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:13:30 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 10:02:10 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:13:30 PM PersonHandler handle
+Apr 18, 2018 10:02:10 AM PersonHandler handle
 FINER: RETURN
-Apr 17, 2018 5:18:56 PM LoginHandler handle
+Apr 18, 2018 10:06:43 AM LoginHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:18:56 PM LoginHandler handle
+Apr 18, 2018 10:06:43 AM LoginHandler handle
 FINER: RETURN
-Apr 17, 2018 5:18:56 PM EventHandler handle
+Apr 18, 2018 10:06:43 AM EventHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:18:56 PM EventsHandler handle
+Apr 18, 2018 10:06:43 AM EventsHandler handle
 FINER: RETURN
-Apr 17, 2018 5:18:56 PM PersonHandler handle
+Apr 18, 2018 10:06:43 AM PersonHandler handle
 FINER: ENTRY
-Apr 17, 2018 5:18:56 PM fms.dao.PersonsDao getAll
+Apr 18, 2018 10:06:43 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 17, 2018 5:18:56 PM PersonHandler handle
+Apr 18, 2018 10:06:43 AM PersonHandler handle
 FINER: RETURN

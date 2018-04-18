@@ -1,7 +1,11 @@
 package fmc.model;
 
 
+import android.util.Log;
+
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 
 import fmshared.fmrequest.LoginRequest;
 import fmshared.model.Events;
@@ -11,7 +15,7 @@ public class Model {
     private Persons[] persons = null;
     private Events[] events = null;
     private Settings settings = new Settings();
-    private ArrayList<Filters> filters = null;
+    private ArrayList<Filters> filters = new ArrayList<>();
     public String hostNum;
     public int portNum;
     private LoginRequest logReq;
@@ -37,7 +41,55 @@ public class Model {
     }
 
     public Events[] getEvents() {
-        return events;
+        HashSet<Events> filteredEvents = new HashSet<>(Arrays.asList(events));
+        HashSet<Events> removeEvents = new HashSet<>();
+
+        if (filters.size() == 0)
+            return events;
+
+        for (Filters filter: filters) {
+            Log.d("DEBUG", filter.getEventType());
+            for (Events event: events) {
+                Persons currentPerson = null;
+
+                for (Persons person: persons) {
+                    if (event.getPersonID().equals(person.getPersonID())) {
+                        currentPerson = person;
+                        break;
+                    }
+                }
+                if (!filter.isShow()) {
+                    if (filter.getEventType().equals("Male Events") && currentPerson.getGender().equals("m")) {
+                        removeEvents.add(event);
+                    }
+                    else if (filter.getEventType().equals("Female Events") && currentPerson.getGender().equals("f")) {
+                        removeEvents.add(event);
+                    }
+                    else if (filter.getEventType().equals(event.getEventType().substring(0, 1).toUpperCase() +
+                            event.getEventType().substring(1).toLowerCase() + " Events")) {
+                        removeEvents.add(event);
+                    }
+                    else if (filter.getEventType().equals("Father's Side")) {
+                        removeEvents.addAll(getSideEvents("Father"));
+                    }
+                    else if (filter.getEventType().equals("Mother's Side")) {
+                        removeEvents.addAll(getSideEvents("Mother"));
+                    }
+                }
+            }
+        }
+
+        filteredEvents.removeAll(removeEvents);
+        return filteredEvents.toArray(new Events[filteredEvents.size()]);
+    }
+
+    public void setSettings(Settings settings) {
+        this.settings = settings;
+    }
+
+    private HashSet<Events> getSideEvents(String side) {
+        return null;
+
     }
 
     public void setEvents(Events[] events) {
@@ -46,10 +98,6 @@ public class Model {
 
     public Settings getSettings() {
         return settings;
-    }
-
-    public void setSettings(Settings settings) {
-        this.settings = settings;
     }
 
     public ArrayList<Filters> getFilters() {

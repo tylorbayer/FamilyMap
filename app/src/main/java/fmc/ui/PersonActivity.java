@@ -107,7 +107,7 @@ public class PersonActivity extends Activity {
     private Drawable getDrawable(String gender) {
         Drawable personIcon;
 
-        if (currentPerson.getGender().equals(gender))
+        if (gender.equals("m"))
             personIcon = new IconDrawable(this, FontAwesomeIcons.fa_male).colorRes(R.color.male_icon).sizeDp(25);
         else
             personIcon = new IconDrawable(this, FontAwesomeIcons.fa_female).colorRes(R.color.female_icon).sizeDp(25);

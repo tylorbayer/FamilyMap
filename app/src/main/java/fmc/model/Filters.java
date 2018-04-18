@@ -2,13 +2,17 @@ package fmc.model;
 
 import java.io.Serializable;
 
-public class Filters implements Serializable {
+public class Filters implements Serializable, Cloneable {
     private String eventType;
-    private boolean show;
+    private boolean show = true;
 
     public Filters(String eventType) {
         this.eventType = eventType;
-        show = false;
+    }
+
+    @Override
+    public Filters clone() throws CloneNotSupportedException {
+        return (Filters) super.clone();
     }
 
     public String getEventType() {

@@ -31,7 +31,12 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        settings = model.getSettings();
+        try {
+            settings = model.getSettings().clone();
+        }
+        catch (Exception e) {
+            settings = model.getSettings();
+        }
 
         settings.setResync(false);
 
@@ -52,33 +57,22 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
         Switch lifeSwitch = findViewById(R.id.life_lines_switch);
         lifeSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    settings.setLifeLines(true);
-                } else {
-                    settings.setLifeLines(false);
-                }
+                settings.setLifeLines(isChecked);
             }
         });
 
         Switch familySwitch = findViewById(R.id.family_lines_switch);
         familySwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    settings.setFamilyLines(true);
-                } else {
-                    settings.setFamilyLines(false);
-                }
+                settings.setFamilyLines(isChecked);
+
             }
         });
 
         Switch spouseSwitch = findViewById(R.id.spouse_lines_switch);
         spouseSwitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if (isChecked) {
-                    settings.setSpouseLines(true);
-                } else {
-                    settings.setSpouseLines(false);
-                }
+                settings.setSpouseLines(isChecked);
             }
         });
 
@@ -121,7 +115,7 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
             @Override
             public void onClick(View v) {
                 Intent mainActivity = new Intent(v.getContext(), MainActivity.class);
-                mainActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                mainActivity.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(mainActivity);
             }
         });
@@ -164,9 +158,9 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
     }
 
     private void returnResult() {
+        model.setSettings(settings);
 
         Intent intent = new Intent();
-        intent.putExtra(EXTRA_RESULT, settings);
         setResult(RESULT_OK, intent);
     }
 

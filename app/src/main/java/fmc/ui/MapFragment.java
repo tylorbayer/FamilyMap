@@ -32,6 +32,7 @@ import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 
 import fmc.model.Filters;
@@ -63,11 +64,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     private Persons currentPerson;
     private View v;
     private Marker currentMarker = null;
+    private HashSet<String> eventTypes = new HashSet<>();
+    private HashMap<String, Float> eventColorMap = new HashMap<>();
+    private float color = -25.0f;
     private final int REQ_CODE_SETTINGS = 1;
     private final int REQ_CODE_FILTERS = 2;
 
     private static Settings settings = new Settings();
-    private static ArrayList<Filters> filters = new ArrayList<>();
+    private static ArrayList<Filters> filters;
 
     private ArrayList<Polyline> polylines = new ArrayList<>();
 
@@ -99,6 +103,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         authToken = model.getAuthToken();
         events = model.getEvents();
         persons = model.getPersons();
+        filters = model.getFilters();
     }
 
     @Override
@@ -157,6 +162,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     }
 
     @Override
+    public void onResume() {
+        drawLines();
+        super.onResume();
+    }
+
+    @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         if (currentEvent == null) {
             inflater.inflate(R.menu.map_frag_menu, menu);
@@ -181,10 +192,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         switch (item.getItemId()) {
             case R.id.search_item:
                 Intent searchActivity = new Intent(getContext(), SearchActivity.class);
-                searchActivity.putExtra("Persons", persons);
-                searchActivity.putExtra("Events", events);
-                searchActivity.putExtra("host", hostNum);
-                searchActivity.putExtra("port", portNum);
                 startActivity(searchActivity);
                 return true;
             case R.id.filters_item:
@@ -204,53 +211,32 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
-        mMarkerArray = new ArrayList<>();
-
-        HashSet<String> eventTypes = new HashSet<>();
 
         for (Events event: events) {
-            LatLng latLng = new LatLng(Double.parseDouble(event.getLatitude()), Double.parseDouble(event.getLongitude()));
-
             String eventType = event.getEventType();
-            Float color;
-
             eventTypes.add(eventType);
-
-            switch (eventType) {
-                case "birth":
-                    color = BitmapDescriptorFactory.HUE_AZURE;
-                    break;
-                case "marriage":
-                    color = BitmapDescriptorFactory.HUE_ORANGE;
-                    break;
-                case "death":
-                    color = BitmapDescriptorFactory.HUE_VIOLET;
-                    break;
-                default:
-                    color = BitmapDescriptorFactory.HUE_CYAN;
-            }
-
-            Marker marker = mMap.addMarker(new MarkerOptions()
-                    .position(latLng)
-                    .title(event.getEventID())
-                    .snippet(event.getPersonID())
-                    .icon(BitmapDescriptorFactory.defaultMarker(color)));
-
-            mMarkerArray.add(marker);
         }
-
-        filters.add(new Filters("Father"));
-        filters.add(new Filters("Mother"));
-        filters.add(new Filters("Male"));
-        filters.add(new Filters("Female"));
 
         for (String eventType: eventTypes) {
-            Filters filter = new Filters(eventType);
-
-            filters.add(filter);
+            color += 90;
+            eventColorMap.put(eventType, color);
         }
 
-        mMap.setOnMarkerClickListener(this);
+        popMap();
+
+        if (filters.size() == 0) {
+            for (String eventType : eventTypes) {
+                Filters filter = new Filters(eventType.substring(0, 1).toUpperCase() +
+                        eventType.substring(1).toLowerCase() + " Events");
+
+                filters.add(filter);
+            }
+
+            filters.add(new Filters("Father's Side"));
+            filters.add(new Filters("Mother's Side"));
+            filters.add(new Filters("Male Events"));
+            filters.add(new Filters("Female Events"));
+        }
 
         if (currentEvent!= null) {
             mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(Double.parseDouble(currentEvent.getLatitude()),
@@ -262,6 +248,30 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
                 }
             }
         }
+        drawLines();
+    }
+
+    private void popMap() {
+        mMarkerArray = new ArrayList<>();
+
+        for (Events event: events) {
+            LatLng latLng = new LatLng(Double.parseDouble(event.getLatitude()), Double.parseDouble(event.getLongitude()));
+
+            String eventType = event.getEventType();
+            Float color = eventColorMap.get(eventType);
+            if (color >= 360.0f)
+                color = 359.9f;
+
+            Marker marker = mMap.addMarker(new MarkerOptions()
+                    .position(latLng)
+                    .title(event.getEventID())
+                    .snippet(event.getPersonID())
+                    .icon(BitmapDescriptorFactory.defaultMarker(color)));
+
+            mMarkerArray.add(marker);
+        }
+
+        mMap.setOnMarkerClickListener(this);
 
         drawLines();
     }
@@ -280,42 +290,11 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     public void rePopulateMap(Events[] events, Persons[] persons) {
         this.events = events;
         this.persons = persons;
-        mMarkerArray = new ArrayList<>();
 
         model.setEvents(events);
         model.setPersons(persons);
 
-        for (Events event: events) {
-            LatLng latLng = new LatLng(Double.parseDouble(event.getLatitude()), Double.parseDouble(event.getLongitude()));
-
-            String eventType = event.getEventType();
-            Float color;
-
-            switch (eventType) {
-                case "birth":
-                    color = BitmapDescriptorFactory.HUE_AZURE;
-                    break;
-                case "marriage":
-                    color = BitmapDescriptorFactory.HUE_ORANGE;
-                    break;
-                case "death":
-                    color = BitmapDescriptorFactory.HUE_VIOLET;
-                    break;
-                default:
-                    color = BitmapDescriptorFactory.HUE_CYAN;
-            }
-
-            Marker marker = mMap.addMarker(new MarkerOptions()
-                    .position(latLng)
-                    .title(event.getEventID())
-                    .snippet(event.getPersonID())
-                    .icon(BitmapDescriptorFactory.defaultMarker(color)));
-
-            mMarkerArray.add(marker);
-        }
-
-        mMap.setOnMarkerClickListener(this);
-        drawLines();
+        popMap();
     }
 
     @Override
@@ -374,6 +353,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
 
             if (settings.isResync()) {
                 mMap.clear();
+                filters = new ArrayList<>();
                 Proxy proxy = new Proxy(gson.toJson(logReq), this, "login", hostNum, portNum, authToken);
                 try {
                     proxy.execute(new URL("http", hostNum, portNum, "user/login"));
@@ -386,7 +366,11 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
             drawLines();
         }
         else if (requestCode == REQ_CODE_FILTERS && resultCode == RESULT_OK && data != null) {
-            filters = FiltersActivity.getResult(data);
+            filters = model.getFilters();
+            events = model.getEvents();
+            persons = model.getPersons();
+            mMap.clear();
+            popMap();
         }
     }
 
@@ -436,21 +420,25 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
 
     private void setMapType() {
         String mapType = settings.getMapType();
+        int gMapType = 0;
+
         if (mMap != null) {
             switch (mapType) {
                 case "Normal":
-                    mMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+                    gMapType = GoogleMap.MAP_TYPE_NORMAL;
                     break;
                 case "Hybrid":
-                    mMap.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+                    gMapType = GoogleMap.MAP_TYPE_HYBRID;
                     break;
                 case "Satellite":
-                    mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+                    gMapType = GoogleMap.MAP_TYPE_SATELLITE;
                     break;
                 case "Terrain":
-                    mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+                    gMapType = GoogleMap.MAP_TYPE_TERRAIN;
                     break;
             }
+            if (mMap.getMapType() != gMapType)
+                mMap.setMapType(gMapType);
         }
     }
 }

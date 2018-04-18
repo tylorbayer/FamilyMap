@@ -5,7 +5,7 @@ import android.graphics.Color;
 
 import java.io.Serializable;
 
-public class Settings implements Serializable {
+public class Settings implements Serializable, Cloneable {
     private String lifeColor = "Red";
     private boolean lifeLines = false;
     private String familyColor = "Red";
@@ -17,6 +17,11 @@ public class Settings implements Serializable {
     private boolean resync = false;
 
     public Settings() {}
+
+    @Override
+    public Settings clone() throws CloneNotSupportedException {
+        return (Settings) super.clone();
+    }
 
     public String getLifeColor() {
         return lifeColor;

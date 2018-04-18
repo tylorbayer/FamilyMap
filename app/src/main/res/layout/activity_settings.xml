@@ -6,14 +6,14 @@
     android:layout_height="fill_parent"
     tools:context="fmc.ui.SettingsActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal" android:layout_width="match_parent"
         android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom" >
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:orientation="vertical" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_gravity="center_vertical"
-            android:layout_marginRight="@dimen/settings_margin_right">
+            android:layout_marginRight="@dimen/settings_margin_right" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -33,29 +33,32 @@
             android:id="@+id/life_lines_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:entries="@array/settings_colors_array"/>
+            android:layout_toLeftOf="@+id/life_lines_switch"
+            android:layout_centerVertical="true"
+            android:entries="@array/settings_colors_array" />
 
         <Switch
             android:id="@+id/life_lines_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical" />
-    </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/filter_margin_right" />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"/>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom" >
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical" android:layout_width="match_parent"
+            android:orientation="vertical" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_gravity="center_vertical"
-            android:layout_marginRight="@dimen/settings_margin_right">
+            android:layout_marginRight="@dimen/settings_margin_right" >
 
             <TextView
                 android:layout_width="wrap_content"
@@ -75,27 +78,30 @@
             android:id="@+id/family_lines_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/family_lines_switch"
+            android:layout_centerVertical="true"
             android:entries="@array/settings_colors_array" />
 
         <Switch
             android:id="@+id/family_lines_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical" />
-    </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/filter_margin_right" />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"/>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-            android:orientation="vertical" android:layout_width="match_parent"
+            android:orientation="vertical" android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:layout_gravity="center_vertical"
             android:layout_marginRight="@dimen/settings_margin_right">
 
@@ -117,22 +123,25 @@
             android:id="@+id/spouse_lines_spinner"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
+            android:layout_toLeftOf="@+id/spouse_lines_switch"
+            android:layout_centerVertical="true"
             android:entries="@array/settings_colors_array" />
 
         <Switch
             android:id="@+id/spouse_lines_switch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"/>
-    </LinearLayout>
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/filter_margin_right" />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@android:color/darker_gray"/>
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="horizontal" android:layout_width="wrap_content"
         android:layout_height="wrap_content" android:layout_marginBottom="@dimen/settings_margin_bottom">
 
@@ -159,8 +168,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:entries="@array/map_type_array"/>
-    </LinearLayout>
+            android:entries="@array/map_type_array"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/settings_margin_right" />
+    </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
