@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -32,6 +33,8 @@ import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -196,7 +199,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
                 return true;
             case R.id.filters_item:
                 Intent filtersActivity = new Intent(getContext(), FiltersActivity.class);
-                filtersActivity.putExtra("Filters", filters);
                 startActivityForResult(filtersActivity, REQ_CODE_FILTERS);
                 return true;
             case R.id.settings_item:
@@ -213,12 +215,11 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
         mMap = googleMap;
 
         for (Events event: events) {
-            String eventType = event.getEventType();
-            eventTypes.add(eventType);
+            eventTypes.add(event.getEventType());
         }
 
         for (String eventType: eventTypes) {
-            color += 90;
+            color += 40.0f;
             eventColorMap.put(eventType, color);
         }
 
@@ -254,19 +255,21 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     private void popMap() {
         mMarkerArray = new ArrayList<>();
 
-        for (Events event: events) {
+        ArrayList<Events> mEvents = new ArrayList<>(Arrays.asList(events));
+        Collections.sort(mEvents);
+        for (Events event: mEvents) {
             LatLng latLng = new LatLng(Double.parseDouble(event.getLatitude()), Double.parseDouble(event.getLongitude()));
 
             String eventType = event.getEventType();
-            Float color = eventColorMap.get(eventType);
-            if (color >= 360.0f)
-                color = 359.9f;
+            Float mColor = eventColorMap.get(eventType);
+            if (mColor >= 360.0f)
+                mColor = 359.9f;
 
             Marker marker = mMap.addMarker(new MarkerOptions()
                     .position(latLng)
                     .title(event.getEventID())
                     .snippet(event.getPersonID())
-                    .icon(BitmapDescriptorFactory.defaultMarker(color)));
+                    .icon(BitmapDescriptorFactory.defaultMarker(mColor)));
 
             mMarkerArray.add(marker);
         }
@@ -278,27 +281,31 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
 
 
     @Override
-    public void populateMap(Events[] events, Persons[] persons) {
-        this.events = events;
-        this.persons = persons;
-
-        model.setEvents(events);
-        model.setPersons(persons);
-    }
+    public void populateMap(Events[] mEvents, Persons[] persons) {}
 
     @Override
-    public void rePopulateMap(Events[] events, Persons[] persons) {
-        this.events = events;
-        this.persons = persons;
+    public void rePopulateMap(Events[] mEvents, Persons[] persons) {
+        for (Events event: mEvents) {
+            event.setEventType(event.getEventType().toLowerCase());
+        }
 
-        model.setEvents(events);
+        model.setEvents(mEvents);
         model.setPersons(persons);
 
         popMap();
     }
 
     @Override
-    public void logRegPassed(boolean passed, String type, String authToken) {}
+    public void logRegPassed(boolean passed, String type, String authToken, String personID) {
+        if (!passed) {
+            Toast.makeText(getContext(), "Re-sync failed. Try logging in again.", Toast.LENGTH_SHORT).show();
+            Intent intent = getActivity().getIntent();
+            getActivity().finish();
+            startActivity(intent);
+        }
+        model.setPersonID(personID);
+        model.setAuthToken(authToken);
+    }
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
@@ -354,12 +361,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
             if (settings.isResync()) {
                 mMap.clear();
                 filters = new ArrayList<>();
-                Proxy proxy = new Proxy(gson.toJson(logReq), this, "login", hostNum, portNum, authToken);
+                model.setEvents(null);
+                Proxy proxy = new Proxy(gson.toJson(logReq), this, "login", hostNum, portNum);
                 try {
                     proxy.execute(new URL("http", hostNum, portNum, "user/login"));
                 }
                 catch (Exception e) {
-                    Log.d("DEBUG", e.getMessage());
+                    Toast.makeText(getContext(), "Re-sync failed. Try logging in again.", Toast.LENGTH_SHORT).show();
+                    Intent mainActivity = new Intent(getContext(), MainActivity.class);
+                    mainActivity.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                    startActivity(mainActivity);
                 }
             }
 
@@ -375,39 +386,127 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleM
     }
 
     private void drawLines() {
+        ArrayList<Marker> newMarkers;
+        Marker newMarker;
+
         setMapType();
         settings = model.getSettings();
+
         if (currentMarker != null) {
-            for (Marker marker : mMarkerArray) {
-                if (settings.isLifeLines()) {
-                    if (currentMarker.getSnippet().equals(marker.getSnippet()) && !currentMarker.getTitle().equals(marker.getTitle())) {
-                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
-                                .add(currentMarker.getPosition(), marker.getPosition())
-                                .color(settings.getLifeLineColor()));
-
-                        polylines.add(polyline);
+            newMarkers = new ArrayList<>();
+            if (settings.isLifeLines()) {
+                for (Marker marker : mMarkerArray) {
+                    if (currentMarker.getSnippet().equals(marker.getSnippet())) {
+                        newMarkers.add(marker);
                     }
                 }
 
-                if (settings.isFamilyLines()) {
-                    if (currentPerson.getMotherID().equals(marker.getSnippet()) || currentPerson.getFatherID().equals(marker.getSnippet())) {
-                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
-                                .add(currentMarker.getPosition(), marker.getPosition())
-                                .color(settings.getFamilyLineColor()));
+                newMarker = newMarkers.get(0);
 
-                        polylines.add(polyline);
-                    }
-                }
-                if (settings.isSpouseLines()) {
-                    if (currentPerson.getSpouseID().equals(marker.getSnippet())) {
-                        Polyline polyline = mMap.addPolyline(new PolylineOptions()
-                                .add(currentMarker.getPosition(), marker.getPosition())
-                                .color(settings.getSpouseLineColor()));
+                for (Marker marker: newMarkers) {
+                    if (newMarker == marker)
+                        continue;
 
-                        polylines.add(polyline);
-                    }
+                    Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                            .add(newMarker.getPosition(), marker.getPosition())
+                            .color(settings.getLifeLineColor()));
+
+                    polylines.add(polyline);
+                    newMarker = marker;
                 }
             }
+
+            if (settings.isFamilyLines()) {
+                addFLHelper();
+            }
+
+            newMarkers = new ArrayList<>();
+            if (settings.isSpouseLines()) {
+                for (Marker marker : mMarkerArray) {
+                    if (currentPerson.getSpouseID().equals(marker.getSnippet())) {
+                        newMarkers.add(marker);
+                    }
+                }
+                if (newMarkers.size() > 0) {
+                    Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                            .add(currentMarker.getPosition(), newMarkers.get(0).getPosition())
+                            .color(settings.getSpouseLineColor()));
+
+                    polylines.add(polyline);
+                }
+            }
+        }
+    }
+
+    private void addFLHelper() {
+        Persons father;
+        Persons mother;
+
+        float width = 10.0f;
+        boolean hasNext = true;
+        Persons mPerson = currentPerson;
+        while(hasNext) {
+            father = null;
+            width -= 2.0f;
+            if (width < 2.0f)
+                width = 2.0f;
+            for (Persons person: persons) {
+                if (mPerson.getFatherID().equals(person.getPersonID())) {
+                    father = person;
+                    break;
+                }
+            }
+
+            if (father == null || father.getFatherID().equals("") || father.getMotherID().equals("")) {
+                hasNext = false;
+            }
+            else if (!father.getFatherID().equals("") && !father.getMotherID().equals("")) {
+                addFamilyLines(father, width);
+                mPerson = father;
+            }
+        }
+
+        width = 10.0f;
+        hasNext = true;
+        mPerson = currentPerson;
+        while(hasNext) {
+            mother = null;
+            width -= 2.0f;
+            if (width < 2.0f)
+                width = 2.0f;
+            for (Persons person: persons) {
+                if (mPerson.getMotherID().equals(person.getPersonID())) {
+                    mother = person;
+                    break;
+                }
+            }
+
+            if (mother == null || mother.getMotherID().equals("") || mother.getMotherID().equals("")) {
+                hasNext = false;
+            }
+            else if (!mother.getFatherID().equals("") && !mother.getMotherID().equals("")) {
+                addFamilyLines(mother, width);
+                mPerson = mother;
+            }
+        }
+    }
+
+    private void addFamilyLines(Persons mPerson, float width) {
+        ArrayList<Marker> mMarkers = new ArrayList<>();
+
+        for (Marker marker : mMarkerArray) {
+            if (mPerson.getPersonID().equals(marker.getSnippet())) {
+                mMarkers.add(marker);
+            }
+        }
+
+        if (mMarkers.size() > 0) {
+            Polyline polyline = mMap.addPolyline(new PolylineOptions()
+                    .add(currentMarker.getPosition(), mMarkers.get(0).getPosition())
+                    .color(settings.getSpouseLineColor())
+                    .width(width));
+
+            polylines.add(polyline);
         }
     }
 

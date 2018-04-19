@@ -135,8 +135,11 @@ public class MainActivity extends FragmentActivity implements Proxy.Context {
     }
 
     @Override
-    public void logRegPassed(boolean passed, String type, String authToken) {
+    public void logRegPassed(boolean passed, String type, String authToken, String personID) {
         this.authToken = authToken;
+
+        model.setAuthToken(authToken);
+        model.setPersonID(personID);
 
         if (!passed)
             Toast.makeText(this, "Login or Register failed. Host or Port may be wrong. Try again.", Toast.LENGTH_LONG).show();
@@ -158,7 +161,8 @@ public class MainActivity extends FragmentActivity implements Proxy.Context {
         model.setPortNum(portNum);
         model.setLogReq(logReq);
         model.setAuthToken(authToken);
-        mapFragment.populateMap(events, persons);
+        model.setEvents(events);
+        model.setPersons(persons);
     }
 
     @Override

@@ -5,6 +5,8 @@ import android.util.Log;
 
 import java.net.URL;
 
+import fmshared.fmresult.LoginResult;
+import fmshared.fmresult.RegisterResult;
 import fmshared.model.Events;
 import fmshared.model.Persons;
 
@@ -18,9 +20,10 @@ public class Proxy extends AsyncTask<URL, Integer, Long> {
     private Events[] events;
     private Persons[] persons = null;
     private boolean passed = true;
+    private String personID = null;
 
     public interface Context {
-        void logRegPassed(boolean passed, String type, String authToken);
+        void logRegPassed(boolean passed, String type, String authToken, String personID);
         void populateMap(Events[] events, Persons[] persons);
         void rePopulateMap(Events[] events, Persons[] persons);
     }
@@ -52,14 +55,18 @@ public class Proxy extends AsyncTask<URL, Integer, Long> {
                 LoginClient loginClient = new LoginClient();
 
                 for (URL url : urls) {
-                    authToken = loginClient.getUrl(url, reqBody);
+                    LoginResult logRes = loginClient.getUrl(url, reqBody);
+                    authToken = logRes.getDataReqInfo();
+                    personID = logRes.getPersonID();
                 }
             }
             else if (type.equals("register")) {
                 RegisterClient registerClient = new RegisterClient();
 
                 for (URL url : urls) {
-                    authToken = registerClient.getUrl(url, reqBody);
+                    RegisterResult regRes = registerClient.getUrl(url, reqBody);
+                    authToken = regRes.getDataReqInfo();
+                    personID = regRes.getPersonID();
                 }
             }
 
@@ -77,10 +84,10 @@ public class Proxy extends AsyncTask<URL, Integer, Long> {
     }
 
     protected void onPostExecute(Long result) {
-        if (!passed || events == null || persons == null)
-            context.logRegPassed(false, type, authToken);
+        if (!passed || events == null || events.length == 0 || persons == null || persons.length == 0)
+            context.logRegPassed(false, type, authToken, personID);
         else {
-            context.logRegPassed(true, type, authToken);
+            context.logRegPassed(true, type, authToken, personID);
             context.populateMap(events, persons);
             context.rePopulateMap(events, persons);
         }

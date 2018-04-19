@@ -17,7 +17,7 @@ class LoginClient {
 
     private static Gson gson = new Gson();
 
-    String getUrl(URL url, String reqBody) throws Exception {
+    LoginResult getUrl(URL url, String reqBody) throws Exception {
         Log.d("Debug", "getURL Login called");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setDoInput(true);
@@ -50,7 +50,7 @@ class LoginClient {
                 throw new Exception();
             }
 
-            return logRes.getDataReqInfo();
+            return logRes;
         }
         return null;
     }

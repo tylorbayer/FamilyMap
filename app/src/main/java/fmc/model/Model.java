@@ -1,10 +1,9 @@
 package fmc.model;
 
 
-import android.util.Log;
-
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.HashSet;
 
 import fmshared.fmrequest.LoginRequest;
@@ -20,6 +19,7 @@ public class Model {
     public int portNum;
     private LoginRequest logReq;
     private String authToken;
+    private String personID;
 
     private static Model INSTANCE = null;
 
@@ -44,52 +44,157 @@ public class Model {
         HashSet<Events> filteredEvents = new HashSet<>(Arrays.asList(events));
         HashSet<Events> removeEvents = new HashSet<>();
 
+        Persons descendant = null;
+
+        for (Persons person: persons) {
+            if (person.getPersonID().equals(personID)) {
+                descendant = person;
+                break;
+            }
+        }
+
         if (filters.size() == 0)
             return events;
 
-        for (Filters filter: filters) {
-            Log.d("DEBUG", filter.getEventType());
-            for (Events event: events) {
-                Persons currentPerson = null;
+        ArrayList<Events> sideEvents = new ArrayList<>();
 
-                for (Persons person: persons) {
-                    if (event.getPersonID().equals(person.getPersonID())) {
-                        currentPerson = person;
-                        break;
-                    }
+        for (Filters filter: filters) {
+            if (!filter.isShow()) {
+                if (filter.getEventType().equals("Male Events")) {
+                    removeEvents.addAll(getGenderFilterEvents("m"));
                 }
-                if (!filter.isShow()) {
-                    if (filter.getEventType().equals("Male Events") && currentPerson.getGender().equals("m")) {
-                        removeEvents.add(event);
-                    }
-                    else if (filter.getEventType().equals("Female Events") && currentPerson.getGender().equals("f")) {
-                        removeEvents.add(event);
-                    }
-                    else if (filter.getEventType().equals(event.getEventType().substring(0, 1).toUpperCase() +
-                            event.getEventType().substring(1).toLowerCase() + " Events")) {
-                        removeEvents.add(event);
-                    }
-                    else if (filter.getEventType().equals("Father's Side")) {
-                        removeEvents.addAll(getSideEvents("Father"));
-                    }
-                    else if (filter.getEventType().equals("Mother's Side")) {
-                        removeEvents.addAll(getSideEvents("Mother"));
-                    }
+                else if (filter.getEventType().equals("Female Events")) {
+                    removeEvents.addAll(getGenderFilterEvents("f"));
+                }
+                else if (filter.getEventType().equals("Father's Side")) {
+//                    Persons father = getParent(descendant,"father");
+//                    removeEvents.addAll(getSideFilterEvents(father));
+//                    getSideFilterEventsHelper(father, sideEvents, true);
+//                    removeEvents.addAll(sideEvents);
+                }
+                else if (filter.getEventType().equals("Mother's Side")) {
+//                    Persons mother = getParent(descendant,"mother");
+//                    removeEvents.addAll(getSideFilterEvents(mother));
+//                    getSideFilterEventsHelper(mother, sideEvents, true);
+//                    removeEvents.addAll(sideEvents);
+                }
+                else {
+                    removeEvents.addAll(getEventFilterEvents(filter.getEventType()));
                 }
             }
         }
 
         filteredEvents.removeAll(removeEvents);
-        return filteredEvents.toArray(new Events[filteredEvents.size()]);
+        ArrayList<Events> filterEvents = new ArrayList<>(filteredEvents);
+        Collections.sort(filterEvents);
+        return filterEvents.toArray(new Events[filteredEvents.size()]);
+    }
+
+    private Persons getParent(Persons child, String side) {
+        for (Persons person: persons) {
+            if (side.equals("father")) {
+                if (child.getFatherID().equals(person.getPersonID())) {
+                    return person;
+                }
+            }
+            if (side.equals("mother")) {
+                if (child.getMotherID().equals(person.getPersonID())) {
+                    return person;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    private boolean getSideFilterEventsHelper(Persons child, ArrayList<Events> sideEvents, boolean hasNext) {
+
+        Persons father;
+        Persons mother;
+
+        Persons mPerson = child;
+        while(hasNext) {
+            father = null;
+            for (Persons person: persons) {
+                if (mPerson.getFatherID().equals(person.getPersonID())) {
+                    father = person;
+                }
+            }
+
+            if (father!= null) {
+                sideEvents.addAll(getSideFilterEvents(father));
+
+                if (father.getMotherID().equals("") || father.getFatherID().equals(""))
+                    hasNext = false;
+                else
+                    hasNext = getSideFilterEventsHelper(father, sideEvents, true);
+            }
+        }
+
+//        while(hasNext) {
+//            mother = null;
+//            for (Persons person: persons) {
+//                if (mPerson.getMotherID().equals(person.getPersonID())) {
+//                    mother = person;
+//                }
+//            }
+//            if (mother != null) {
+//                sideEvents.addAll(getSideFilterEvents(mother));
+//
+//                if (mother.getFatherID().equals("") || mother.getMotherID().equals(""))
+//                    hasNext = false;
+//                else
+//                    hasNext = getSideFilterEventsHelper(mother, sideEvents, true);
+//            }
+//        }
+        return false;
+    }
+
+    private ArrayList<Events> getSideFilterEvents(Persons person) {
+        ArrayList<Events> sideEvents = new ArrayList<>();
+
+        for (Events event: events) {
+            if (event.getPersonID().equals(person.getPersonID())) {
+                sideEvents.add(event);
+            }
+        }
+
+        return sideEvents;
+    }
+
+    private ArrayList<Events> getGenderFilterEvents(String gender) {
+        ArrayList<Events> genderFilterEvents= new ArrayList<>();
+
+        for (Persons person : persons) {
+            if (person.getGender().equals(gender)) {
+                for (Events event : events) {
+                    if (event.getPersonID().equals(person.getPersonID())) {
+                        genderFilterEvents.add(event);
+                    }
+                }
+            }
+        }
+
+        return genderFilterEvents;
+    }
+
+    private ArrayList<Events> getEventFilterEvents(String eventType) {
+        ArrayList<Events> eventFilterEvents= new ArrayList<>();
+
+        for (Events event: events) {
+            String mEventType = event.getEventType();
+            if (eventType.equals(mEventType.substring(0, 1).toUpperCase() +
+                    mEventType.substring(1).toLowerCase() + " Events")) {
+                eventFilterEvents.add(event);
+            }
+        }
+
+
+        return eventFilterEvents;
     }
 
     public void setSettings(Settings settings) {
         this.settings = settings;
-    }
-
-    private HashSet<Events> getSideEvents(String side) {
-        return null;
-
     }
 
     public void setEvents(Events[] events) {
@@ -138,5 +243,13 @@ public class Model {
 
     public void setAuthToken(String authToken) {
         this.authToken = authToken;
+    }
+
+    public String getPersonID() {
+        return personID;
+    }
+
+    public void setPersonID(String personID) {
+        this.personID = personID;
     }
 }

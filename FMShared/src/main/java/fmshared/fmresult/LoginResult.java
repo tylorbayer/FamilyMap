@@ -51,4 +51,8 @@ public class LoginResult {
     public String getDataReqInfo() {
         return authToken;
     }
+
+    public String getPersonID() {
+        return personID;
+    }
 }

@@ -7,7 +7,7 @@ import java.io.Serializable;
  *
  * @author TylorBayer
  */
-public class Events extends FMSModel implements Serializable {
+public class Events extends FMSModel implements Serializable, Comparable<Events> {
     /** Unique identifier for this event */
     private String eventID;
     /** User (username) to which this person belongs */
@@ -64,6 +64,10 @@ public class Events extends FMSModel implements Serializable {
         values.add(year);
     }
 
+    public void setEventType(String eventType) {
+        this.eventType = eventType;
+    }
+
     public String getEventID() {
         return eventID;
     }
@@ -115,4 +119,16 @@ public class Events extends FMSModel implements Serializable {
 
     /** Constructor for GSON */
     public Events() {}
+
+    @Override
+    public int compareTo(Events o2) {
+        try {
+            if (Integer.parseInt(this.getYear()) > Integer.parseInt(o2.getYear()))
+                return 1;
+        }
+        catch (Exception e) {
+            return 100000;
+        }
+        return -1;
+    }
 }

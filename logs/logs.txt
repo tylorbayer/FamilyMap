@@ -1,96 +1,452 @@
-Apr 18, 2018 7:55:33 AM fms.Server run
+Apr 18, 2018 11:52:43 AM fms.Server run
 INFO: Initializing HTTP Server
-Apr 18, 2018 7:55:33 AM fms.Server run
+Apr 18, 2018 11:52:43 AM fms.Server run
 INFO: Creating contexts
-Apr 18, 2018 7:55:33 AM fms.Server run
+Apr 18, 2018 11:52:43 AM fms.Server run
 INFO: Starting HTTP server
-Apr 18, 2018 7:56:38 AM LoginHandler handle
+Apr 18, 2018 11:53:57 AM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 7:56:39 AM LoginHandler handle
+Apr 18, 2018 11:53:58 AM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 7:56:39 AM EventHandler handle
+Apr 18, 2018 11:53:58 AM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 7:56:40 AM EventsHandler handle
+Apr 18, 2018 11:53:59 AM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 7:56:40 AM PersonHandler handle
+Apr 18, 2018 11:53:59 AM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 7:56:40 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 11:53:59 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 7:56:40 AM PersonHandler handle
+Apr 18, 2018 11:53:59 AM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 8:02:04 AM LoginHandler handle
+Apr 18, 2018 11:56:29 AM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:02:04 AM LoginHandler handle
+Apr 18, 2018 11:56:29 AM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:02:04 AM EventHandler handle
+Apr 18, 2018 11:56:29 AM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:02:04 AM EventsHandler handle
+Apr 18, 2018 11:56:29 AM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 8:02:04 AM PersonHandler handle
+Apr 18, 2018 11:56:29 AM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:02:04 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 11:56:29 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 8:02:04 AM PersonHandler handle
+Apr 18, 2018 11:56:29 AM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 8:04:15 AM LoginHandler handle
+Apr 18, 2018 11:58:45 AM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:04:15 AM LoginHandler handle
+Apr 18, 2018 11:58:45 AM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:04:15 AM EventHandler handle
+Apr 18, 2018 11:58:45 AM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:04:15 AM EventsHandler handle
+Apr 18, 2018 11:58:45 AM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 8:04:16 AM PersonHandler handle
+Apr 18, 2018 11:58:45 AM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:04:16 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 11:58:45 AM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 8:04:16 AM PersonHandler handle
+Apr 18, 2018 11:58:45 AM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 8:05:57 AM LoginHandler handle
+Apr 18, 2018 12:00:01 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:05:57 AM LoginHandler handle
+Apr 18, 2018 12:00:01 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:05:57 AM EventHandler handle
+Apr 18, 2018 12:00:01 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:05:57 AM EventsHandler handle
+Apr 18, 2018 12:00:01 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 8:05:58 AM PersonHandler handle
+Apr 18, 2018 12:00:02 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:05:58 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 12:00:02 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 8:05:58 AM PersonHandler handle
+Apr 18, 2018 12:00:02 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 8:08:08 AM LoginHandler handle
+Apr 18, 2018 12:04:28 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:08:08 AM LoginHandler handle
+Apr 18, 2018 12:04:28 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:08:08 AM EventHandler handle
+Apr 18, 2018 12:04:28 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:08:08 AM EventsHandler handle
+Apr 18, 2018 12:04:28 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 8:08:08 AM PersonHandler handle
+Apr 18, 2018 12:04:28 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:08:08 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 12:04:28 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 8:08:08 AM PersonHandler handle
+Apr 18, 2018 12:04:28 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 8:11:55 AM LoginHandler handle
+Apr 18, 2018 12:09:01 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:11:55 AM LoginHandler handle
+Apr 18, 2018 12:09:01 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:11:55 AM EventHandler handle
+Apr 18, 2018 12:09:01 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:11:55 AM EventsHandler handle
+Apr 18, 2018 12:09:01 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 8:11:55 AM PersonHandler handle
+Apr 18, 2018 12:09:01 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:11:56 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 12:09:01 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 8:11:56 AM PersonHandler handle
+Apr 18, 2018 12:09:01 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 8:51:28 AM LoginHandler handle
+Apr 18, 2018 12:10:46 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:51:28 AM fms.service.LoginService login
+Apr 18, 2018 12:10:46 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:10:46 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:10:46 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:10:46 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:10:46 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:10:46 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 12:25:47 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:25:48 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:25:48 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:25:48 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:25:48 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:25:48 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:25:48 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 12:27:44 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:27:44 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:27:44 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:27:44 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:27:45 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:27:45 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:27:45 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 12:29:10 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:29:10 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:29:10 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:29:10 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:29:10 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:29:10 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:29:10 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 12:40:05 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:40:05 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:40:05 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:40:05 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:40:06 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:40:06 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:40:06 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 12:46:27 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:46:27 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:46:27 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:46:27 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:46:27 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:46:27 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:46:27 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 12:49:10 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:49:10 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 12:49:10 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:49:10 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 12:49:11 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 12:49:11 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 12:49:11 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:06:52 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:06:53 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:06:53 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:06:53 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:06:53 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:06:53 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:06:53 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:10:48 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:10:48 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:10:48 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:10:48 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:10:49 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:10:49 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:10:49 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:21:38 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:21:38 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:21:38 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:21:38 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:21:38 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:21:38 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:21:38 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:28:12 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:28:12 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:28:12 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:28:12 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:28:12 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:28:12 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:28:12 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:32:48 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:32:48 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:32:48 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:32:48 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:32:49 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:32:49 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:32:49 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:37:24 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:37:24 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:37:24 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:37:24 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:37:24 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:37:24 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:37:24 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 1:39:25 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:39:25 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 1:39:25 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:39:25 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 1:39:25 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 1:39:25 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 1:39:25 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 2:14:48 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:14:48 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 2:14:48 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:14:48 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 2:14:49 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:14:49 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 2:14:49 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 2:15:24 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:15:24 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 2:15:24 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:15:24 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 2:15:24 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:15:24 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 2:15:24 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 2:18:09 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:18:09 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 2:18:09 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:18:09 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 2:18:09 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 2:18:09 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 2:18:09 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:00:07 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:00:07 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:00:07 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:00:07 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:00:08 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:00:08 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 3:00:08 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:04:44 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:04:44 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:04:44 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:04:44 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:04:44 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:04:44 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 3:04:44 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:07:42 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:07:42 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:07:42 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:07:42 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:07:42 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:07:42 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 3:07:42 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:21:16 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:21:17 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:21:17 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:21:17 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:21:17 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:21:17 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 3:21:17 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:23:54 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:23:54 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:23:54 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:23:54 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:23:55 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:23:55 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 3:23:55 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:37:24 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:37:24 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:37:24 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:37:24 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:37:25 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:37:25 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 3:37:25 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:39:34 PM fms.handler.DefaultFileHandler handle
+INFO: web/index.html
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:39:34 PM fms.handler.DefaultFileHandler handle
+INFO: web/css/main.css
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:39:34 PM fms.handler.DefaultFileHandler handle
+INFO: web/favicon.ico
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:39:34 PM fms.handler.DefaultFileHandler handle
+INFO: web/favicon.ico
+Apr 18, 2018 3:39:34 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 3:40:34 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:40:34 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 3:40:47 PM LoadHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:40:47 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 3:40:48 PM LoadHandler handle
+FINER: RETURN
+Apr 18, 2018 3:40:54 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:40:54 PM fms.service.LoginService login
 SEVERE: Users login information incorrect
 fms.dao.DatabaseException: Users login information incorrect
 	at fms.dao.UsersDao.verify(UsersDao.java:80)
@@ -113,369 +469,1791 @@ Caused by: java.sql.SQLException: ResultSet closed
 	at fms.dao.UsersDao.verify(UsersDao.java:75)
 	... 12 more
 
-Apr 18, 2018 8:51:28 AM LoginHandler handle
+Apr 18, 2018 3:40:54 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:51:32 AM LoginHandler handle
+Apr 18, 2018 3:41:08 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:51:32 AM LoginHandler handle
+Apr 18, 2018 3:41:08 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 8:51:33 AM EventHandler handle
+Apr 18, 2018 3:41:08 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:51:33 AM EventsHandler handle
+Apr 18, 2018 3:41:08 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 8:51:33 AM PersonHandler handle
+Apr 18, 2018 3:41:09 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 8:51:33 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:41:09 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 8:51:33 AM PersonHandler handle
+Apr 18, 2018 3:41:09 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:01:38 AM LoginHandler handle
+Apr 18, 2018 3:41:41 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:01:38 AM LoginHandler handle
+Apr 18, 2018 3:41:41 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:01:38 AM EventHandler handle
+Apr 18, 2018 3:41:41 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:01:38 AM EventsHandler handle
+Apr 18, 2018 3:41:41 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:01:39 AM PersonHandler handle
+Apr 18, 2018 3:41:42 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:01:39 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:41:42 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:01:39 AM PersonHandler handle
+Apr 18, 2018 3:41:42 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:04:58 AM LoginHandler handle
+Apr 18, 2018 3:43:56 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:04:58 AM LoginHandler handle
+Apr 18, 2018 3:43:56 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:04:58 AM EventHandler handle
+Apr 18, 2018 3:43:56 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:04:58 AM EventsHandler handle
+Apr 18, 2018 3:43:56 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:04:59 AM PersonHandler handle
+Apr 18, 2018 3:43:56 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:04:59 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:43:56 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:04:59 AM PersonHandler handle
+Apr 18, 2018 3:43:56 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:05:44 AM LoginHandler handle
+Apr 18, 2018 3:44:45 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:05:44 AM LoginHandler handle
+Apr 18, 2018 3:44:45 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:05:44 AM EventHandler handle
+Apr 18, 2018 3:44:45 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:05:44 AM EventsHandler handle
+Apr 18, 2018 3:44:45 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:05:44 AM PersonHandler handle
+Apr 18, 2018 3:44:45 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:05:44 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:44:45 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:05:44 AM PersonHandler handle
+Apr 18, 2018 3:44:45 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:18 AM LoginHandler handle
+Apr 18, 2018 3:46:07 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:18 AM LoginHandler handle
+Apr 18, 2018 3:46:07 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:19 AM EventHandler handle
+Apr 18, 2018 3:46:07 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:19 AM EventsHandler handle
+Apr 18, 2018 3:46:07 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:19 AM PersonHandler handle
+Apr 18, 2018 3:46:08 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:19 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:46:08 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:11:19 AM PersonHandler handle
+Apr 18, 2018 3:46:08 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:23 AM LoginHandler handle
+Apr 18, 2018 3:46:48 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:23 AM LoginHandler handle
+Apr 18, 2018 3:46:48 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:23 AM EventHandler handle
+Apr 18, 2018 3:46:48 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:23 AM EventsHandler handle
+Apr 18, 2018 3:46:49 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:23 AM PersonHandler handle
+Apr 18, 2018 3:46:49 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:23 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:46:49 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:11:23 AM PersonHandler handle
+Apr 18, 2018 3:46:49 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:37 AM LoginHandler handle
+Apr 18, 2018 3:48:11 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:37 AM LoginHandler handle
+Apr 18, 2018 3:48:11 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:37 AM EventHandler handle
+Apr 18, 2018 3:48:11 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:37 AM EventsHandler handle
+Apr 18, 2018 3:48:11 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:11:38 AM PersonHandler handle
+Apr 18, 2018 3:48:11 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:11:38 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:48:11 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:11:38 AM PersonHandler handle
+Apr 18, 2018 3:48:11 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:18:50 AM LoginHandler handle
+Apr 18, 2018 3:49:25 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:18:50 AM LoginHandler handle
+Apr 18, 2018 3:49:25 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:18:50 AM EventHandler handle
+Apr 18, 2018 3:49:25 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:18:50 AM EventsHandler handle
+Apr 18, 2018 3:49:25 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:18:50 AM PersonHandler handle
+Apr 18, 2018 3:49:25 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:18:50 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:49:25 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:18:50 AM PersonHandler handle
+Apr 18, 2018 3:49:26 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:20:04 AM LoginHandler handle
+Apr 18, 2018 3:50:24 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:20:04 AM LoginHandler handle
+Apr 18, 2018 3:50:24 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:20:04 AM EventHandler handle
+Apr 18, 2018 3:50:24 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:20:04 AM EventsHandler handle
+Apr 18, 2018 3:50:24 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:20:04 AM PersonHandler handle
+Apr 18, 2018 3:50:24 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:20:04 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:50:24 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:20:04 AM PersonHandler handle
+Apr 18, 2018 3:50:24 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:22:32 AM LoginHandler handle
+Apr 18, 2018 3:51:58 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:22:32 AM LoginHandler handle
+Apr 18, 2018 3:51:58 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:22:32 AM EventHandler handle
+Apr 18, 2018 3:51:58 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:22:32 AM EventsHandler handle
+Apr 18, 2018 3:51:58 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:22:32 AM PersonHandler handle
+Apr 18, 2018 3:51:59 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:22:32 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:51:59 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:22:32 AM PersonHandler handle
+Apr 18, 2018 3:51:59 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:23:19 AM LoginHandler handle
+Apr 18, 2018 3:55:26 PM FillHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:23:19 AM LoginHandler handle
+Apr 18, 2018 3:55:29 PM FillHandler handle
 FINER: RETURN
-Apr 18, 2018 9:23:19 AM EventHandler handle
+Apr 18, 2018 3:55:35 PM ClearHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:23:19 AM EventsHandler handle
+Apr 18, 2018 3:55:35 PM ClearHandler handle
 FINER: RETURN
-Apr 18, 2018 9:23:19 AM PersonHandler handle
+Apr 18, 2018 3:55:39 PM LoadHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:23:19 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:55:39 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 3:55:40 PM LoadHandler handle
+FINER: RETURN
+Apr 18, 2018 3:55:43 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:55:43 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:55:43 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:55:43 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:55:44 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:55:44 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:23:19 AM PersonHandler handle
+Apr 18, 2018 3:55:44 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:24:17 AM LoginHandler handle
+Apr 18, 2018 3:55:54 PM FillHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:24:17 AM LoginHandler handle
+Apr 18, 2018 3:55:56 PM FillHandler handle
 FINER: RETURN
-Apr 18, 2018 9:24:17 AM EventHandler handle
+Apr 18, 2018 3:55:59 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:24:17 AM EventsHandler handle
+Apr 18, 2018 3:55:59 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:24:17 AM PersonHandler handle
+Apr 18, 2018 3:55:59 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:24:17 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:55:59 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:55:59 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:55:59 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:24:17 AM PersonHandler handle
+Apr 18, 2018 3:55:59 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:28:20 AM LoginHandler handle
+Apr 18, 2018 3:56:37 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:28:20 AM LoginHandler handle
+Apr 18, 2018 3:56:37 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:28:20 AM EventHandler handle
+Apr 18, 2018 3:56:37 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:28:20 AM EventsHandler handle
+Apr 18, 2018 3:56:37 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:28:20 AM PersonHandler handle
+Apr 18, 2018 3:56:37 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:28:20 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:56:37 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:28:20 AM PersonHandler handle
+Apr 18, 2018 3:56:37 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:29:44 AM LoginHandler handle
+Apr 18, 2018 3:56:49 PM ClearHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:29:44 AM LoginHandler handle
+Apr 18, 2018 3:56:49 PM ClearHandler handle
 FINER: RETURN
-Apr 18, 2018 9:29:44 AM EventHandler handle
+Apr 18, 2018 3:56:53 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:29:44 AM EventsHandler handle
+Apr 18, 2018 3:56:53 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 3:56:53 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:29:44 AM PersonHandler handle
+Apr 18, 2018 3:56:57 PM LoadHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:29:44 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:56:57 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 3:56:57 PM LoadHandler handle
+FINER: RETURN
+Apr 18, 2018 3:57:15 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:57:15 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:57:15 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:57:15 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:57:15 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:57:15 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:29:44 AM PersonHandler handle
+Apr 18, 2018 3:57:15 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:32:43 AM LoginHandler handle
+Apr 18, 2018 3:57:31 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:32:43 AM LoginHandler handle
+Apr 18, 2018 3:57:31 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:32:43 AM EventHandler handle
+Apr 18, 2018 3:57:32 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:32:43 AM EventsHandler handle
+Apr 18, 2018 3:57:32 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:32:43 AM PersonHandler handle
+Apr 18, 2018 3:57:32 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:32:43 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:57:32 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:32:43 AM PersonHandler handle
+Apr 18, 2018 3:57:32 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:34:18 AM LoginHandler handle
+Apr 18, 2018 3:57:38 PM ClearHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:34:18 AM LoginHandler handle
+Apr 18, 2018 3:57:38 PM ClearHandler handle
 FINER: RETURN
-Apr 18, 2018 9:34:18 AM EventHandler handle
+Apr 18, 2018 3:57:44 PM LoadHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:34:18 AM EventsHandler handle
+Apr 18, 2018 3:57:44 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 3:57:44 PM LoadHandler handle
 FINER: RETURN
-Apr 18, 2018 9:34:18 AM PersonHandler handle
+Apr 18, 2018 3:57:48 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:34:18 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:57:48 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 3:57:48 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:57:48 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:57:49 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:57:49 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:34:18 AM PersonHandler handle
+Apr 18, 2018 3:57:49 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:35:31 AM LoginHandler handle
+Apr 18, 2018 3:58:34 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:35:31 AM LoginHandler handle
+Apr 18, 2018 3:58:34 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:35:31 AM EventHandler handle
+Apr 18, 2018 3:58:34 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:35:31 AM EventsHandler handle
+Apr 18, 2018 3:58:34 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:35:31 AM PersonHandler handle
+Apr 18, 2018 3:58:34 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:35:31 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:58:34 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:35:31 AM PersonHandler handle
+Apr 18, 2018 3:58:34 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:36:22 AM LoginHandler handle
+Apr 18, 2018 3:58:51 PM FillHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:36:22 AM LoginHandler handle
+Apr 18, 2018 3:58:54 PM FillHandler handle
 FINER: RETURN
-Apr 18, 2018 9:36:22 AM EventHandler handle
+Apr 18, 2018 3:59:09 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:36:22 AM EventsHandler handle
+Apr 18, 2018 3:59:09 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:36:22 AM PersonHandler handle
+Apr 18, 2018 3:59:09 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:36:22 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:59:09 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 3:59:11 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 3:59:11 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:36:22 AM PersonHandler handle
+Apr 18, 2018 3:59:11 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:37:33 AM LoginHandler handle
+Apr 18, 2018 3:59:32 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:37:33 AM LoginHandler handle
+Apr 18, 2018 3:59:32 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:37:33 AM EventHandler handle
+Apr 18, 2018 3:59:32 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:37:33 AM EventsHandler handle
+Apr 18, 2018 3:59:32 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:37:33 AM PersonHandler handle
+Apr 18, 2018 3:59:32 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:37:33 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 3:59:32 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:37:33 AM PersonHandler handle
+Apr 18, 2018 3:59:32 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:39:50 AM LoginHandler handle
+Apr 18, 2018 4:00:29 PM ClearHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:39:50 AM LoginHandler handle
+Apr 18, 2018 4:00:29 PM ClearHandler handle
 FINER: RETURN
-Apr 18, 2018 9:39:50 AM EventHandler handle
+Apr 18, 2018 4:00:40 PM LoadHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:39:50 AM EventsHandler handle
+Apr 18, 2018 4:00:40 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 4:00:40 PM LoadHandler handle
 FINER: RETURN
-Apr 18, 2018 9:39:50 AM PersonHandler handle
+Apr 18, 2018 4:01:32 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:39:50 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 4:01:32 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 4:01:32 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 4:01:39 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 4:01:39 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 4:01:39 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 4:01:39 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 4:01:39 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 4:01:39 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:39:50 AM PersonHandler handle
+Apr 18, 2018 4:01:39 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:43:23 AM LoginHandler handle
+Apr 18, 2018 4:05:13 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:43:23 AM LoginHandler handle
+Apr 18, 2018 4:05:13 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:43:23 AM EventHandler handle
+Apr 18, 2018 4:05:13 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:43:23 AM EventsHandler handle
+Apr 18, 2018 4:05:13 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:43:23 AM PersonHandler handle
+Apr 18, 2018 4:05:13 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:43:23 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 4:05:13 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:43:23 AM PersonHandler handle
+Apr 18, 2018 4:05:13 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:54:08 AM LoginHandler handle
+Apr 18, 2018 5:50:55 PM DefaultFileHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:54:08 AM LoginHandler handle
+Apr 18, 2018 5:50:55 PM fms.handler.DefaultFileHandler handle
+INFO: web/index.html
+Apr 18, 2018 5:50:55 PM DefaultFileHandler handle
 FINER: RETURN
-Apr 18, 2018 9:54:08 AM EventHandler handle
+Apr 18, 2018 5:50:55 PM DefaultFileHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:54:08 AM EventsHandler handle
+Apr 18, 2018 5:50:55 PM fms.handler.DefaultFileHandler handle
+INFO: web/css/main.css
+Apr 18, 2018 5:50:55 PM DefaultFileHandler handle
 FINER: RETURN
-Apr 18, 2018 9:54:08 AM PersonHandler handle
+Apr 18, 2018 5:51:30 PM ClearHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:54:08 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 5:51:30 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 5:51:56 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 5:51:58 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 5:52:47 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 5:52:47 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 5:52:47 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 5:52:47 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 5:52:47 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 5:52:47 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:54:08 AM PersonHandler handle
+Apr 18, 2018 5:52:47 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:58:48 AM LoginHandler handle
+Apr 18, 2018 5:55:57 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:58:48 AM LoginHandler handle
+Apr 18, 2018 5:55:57 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:58:48 AM EventHandler handle
+Apr 18, 2018 5:55:57 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:58:48 AM EventsHandler handle
+Apr 18, 2018 5:55:57 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:58:48 AM PersonHandler handle
+Apr 18, 2018 5:55:57 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:58:48 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 5:55:57 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:58:48 AM PersonHandler handle
+Apr 18, 2018 5:55:57 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 9:59:23 AM LoginHandler handle
+Apr 18, 2018 5:57:29 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:59:23 AM LoginHandler handle
+Apr 18, 2018 5:57:29 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 9:59:23 AM EventHandler handle
+Apr 18, 2018 5:57:29 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:59:23 AM EventsHandler handle
+Apr 18, 2018 5:57:29 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 9:59:24 AM PersonHandler handle
+Apr 18, 2018 5:57:29 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 9:59:24 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 5:57:29 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 9:59:24 AM PersonHandler handle
+Apr 18, 2018 5:57:29 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 10:02:10 AM LoginHandler handle
+Apr 18, 2018 5:59:20 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 10:02:10 AM LoginHandler handle
+Apr 18, 2018 5:59:20 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 10:02:10 AM EventHandler handle
+Apr 18, 2018 5:59:20 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 10:02:10 AM EventsHandler handle
+Apr 18, 2018 5:59:20 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 10:02:10 AM PersonHandler handle
+Apr 18, 2018 5:59:20 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 10:02:10 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 5:59:20 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 10:02:10 AM PersonHandler handle
+Apr 18, 2018 5:59:20 PM PersonHandler handle
 FINER: RETURN
-Apr 18, 2018 10:06:43 AM LoginHandler handle
+Apr 18, 2018 6:01:22 PM LoginHandler handle
 FINER: ENTRY
-Apr 18, 2018 10:06:43 AM LoginHandler handle
+Apr 18, 2018 6:01:22 PM LoginHandler handle
 FINER: RETURN
-Apr 18, 2018 10:06:43 AM EventHandler handle
+Apr 18, 2018 6:01:22 PM EventHandler handle
 FINER: ENTRY
-Apr 18, 2018 10:06:43 AM EventsHandler handle
+Apr 18, 2018 6:01:23 PM EventsHandler handle
 FINER: RETURN
-Apr 18, 2018 10:06:43 AM PersonHandler handle
+Apr 18, 2018 6:01:23 PM PersonHandler handle
 FINER: ENTRY
-Apr 18, 2018 10:06:43 AM fms.dao.PersonsDao getAll
+Apr 18, 2018 6:01:23 PM fms.dao.PersonsDao getAll
 INFO: getAll called
-Apr 18, 2018 10:06:43 AM PersonHandler handle
+Apr 18, 2018 6:01:23 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:02:18 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:02:18 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:02:18 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:02:18 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:02:18 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:02:18 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:02:18 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:05:19 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:05:20 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:05:20 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:05:20 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:05:20 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:05:20 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:05:20 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:07:27 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:07:27 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:07:27 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:07:27 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:07:27 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:07:27 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:07:27 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:13:24 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:13:24 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:13:24 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:13:24 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:13:24 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:13:24 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:13:24 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:15:30 PM FillHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:15:31 PM FillHandler handle
+FINER: RETURN
+Apr 18, 2018 6:15:38 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:15:38 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:15:38 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:15:38 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:15:38 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:15:38 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:15:38 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:01 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:01 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:01 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:01 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:01 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:01 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:22:01 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:12 PM FillHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:13 PM FillHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:18 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:18 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:18 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:18 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:18 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:18 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:22:18 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:25 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:25 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:43 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:43 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:22:43 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:43 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:43 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:22:43 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:43 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:43 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:22:43 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:22:45 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:22:45 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:22:45 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:23:04 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:23:05 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:23:10 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:23:10 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:23:10 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:23:10 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:23:10 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:23:10 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:23:10 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:24:42 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:24:42 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:24:42 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:24:42 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:24:42 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:24:42 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:24:42 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:26:16 PM FillHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:26:17 PM FillHandler handle
+FINER: RETURN
+Apr 18, 2018 6:26:19 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:26:19 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:26:19 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:26:19 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:26:19 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:26:19 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:26:19 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:26:24 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:26:25 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:26:27 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:26:27 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:26:27 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:07 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:07 PM fms.service.RegisterService register
+SEVERE: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+fms.dao.DatabaseException: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at fms.dao.UsersDao.insert(UsersDao.java:36)
+	at fms.service.RegisterService.register(RegisterService.java:30)
+	at fms.handler.RegisterHandler.handle(RegisterHandler.java:32)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at fms.dao.FMSDao.insert(FMSDao.java:91)
+	at fms.dao.UsersDao.insert(UsersDao.java:32)
+	... 12 more
+Caused by: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at org.sqlite.DB.newSQLException(DB.java:383)
+	at org.sqlite.DB.newSQLException(DB.java:387)
+	at org.sqlite.DB.execute(DB.java:342)
+	at org.sqlite.DB.executeUpdate(DB.java:363)
+	at org.sqlite.PrepStmt.executeUpdate(PrepStmt.java:85)
+	at fms.dao.FMSDao.insert(FMSDao.java:84)
+	... 13 more
+
+Apr 18, 2018 6:28:07 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:11 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:13 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:15 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:15 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:15 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:15 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:15 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:15 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:28:15 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:20 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:20 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:20 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:20 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:20 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:20 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:28:20 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:23 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:23 PM fms.service.RegisterService register
+SEVERE: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (column Username is not unique)
+fms.dao.DatabaseException: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (column Username is not unique)
+	at fms.dao.UsersDao.insert(UsersDao.java:36)
+	at fms.service.RegisterService.register(RegisterService.java:30)
+	at fms.handler.RegisterHandler.handle(RegisterHandler.java:32)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (column Username is not unique)
+	at fms.dao.FMSDao.insert(FMSDao.java:91)
+	at fms.dao.UsersDao.insert(UsersDao.java:32)
+	... 12 more
+Caused by: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (column Username is not unique)
+	at org.sqlite.DB.newSQLException(DB.java:383)
+	at org.sqlite.DB.newSQLException(DB.java:387)
+	at org.sqlite.DB.execute(DB.java:342)
+	at org.sqlite.DB.executeUpdate(DB.java:363)
+	at org.sqlite.PrepStmt.executeUpdate(PrepStmt.java:85)
+	at fms.dao.FMSDao.insert(FMSDao.java:84)
+	... 13 more
+
+Apr 18, 2018 6:28:23 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:28 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:28 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:28 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:28 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:29 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:29 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:28:29 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:45 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:45 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:45 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:45 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:28:46 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:28:46 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:28:46 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:30:13 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:30:13 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:30:13 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:30:13 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:30:13 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:30:13 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:30:13 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:31:04 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:31:04 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:31:04 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:31:04 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:31:04 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:31:04 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:31:04 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:31:49 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:31:49 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:31:49 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:31:50 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:31:50 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:31:50 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:31:50 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:32:09 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:32:09 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:32:09 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:32:09 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:32:09 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:32:09 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:32:09 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:33:59 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:33:59 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:33:59 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:33:59 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:33:59 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:33:59 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:33:59 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:34:50 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:34:50 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:34:50 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:34:51 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:34:51 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:34:51 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:34:51 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:35:03 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:35:03 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:35:06 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:35:06 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:35:06 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:35:37 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:35:37 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:35:37 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:19 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:19 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:37:19 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:39 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:39 PM fms.service.RegisterService register
+SEVERE: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+fms.dao.DatabaseException: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at fms.dao.UsersDao.insert(UsersDao.java:36)
+	at fms.service.RegisterService.register(RegisterService.java:30)
+	at fms.handler.RegisterHandler.handle(RegisterHandler.java:32)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at fms.dao.FMSDao.insert(FMSDao.java:91)
+	at fms.dao.UsersDao.insert(UsersDao.java:32)
+	... 12 more
+Caused by: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at org.sqlite.DB.newSQLException(DB.java:383)
+	at org.sqlite.DB.newSQLException(DB.java:387)
+	at org.sqlite.DB.execute(DB.java:342)
+	at org.sqlite.DB.executeUpdate(DB.java:363)
+	at org.sqlite.PrepStmt.executeUpdate(PrepStmt.java:85)
+	at fms.dao.FMSDao.insert(FMSDao.java:84)
+	... 13 more
+
+Apr 18, 2018 6:37:39 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:45 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:47 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:48 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:48 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:48 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:48 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:49 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:49 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:37:49 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:54 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:54 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:54 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:54 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:37:54 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:37:54 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:37:54 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:38:09 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:38:09 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:38:15 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:38:16 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:38:16 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:09 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:09 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:39:09 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:31 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:31 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:39:31 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:42 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:42 PM fms.service.RegisterService register
+SEVERE: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+fms.dao.DatabaseException: Users data incorrect: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at fms.dao.UsersDao.insert(UsersDao.java:36)
+	at fms.service.RegisterService.register(RegisterService.java:30)
+	at fms.handler.RegisterHandler.handle(RegisterHandler.java:32)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at fms.dao.FMSDao.insert(FMSDao.java:91)
+	at fms.dao.UsersDao.insert(UsersDao.java:32)
+	... 12 more
+Caused by: java.sql.SQLException: [SQLITE_CONSTRAINT]  Abort due to constraint violation (constraint failed)
+	at org.sqlite.DB.newSQLException(DB.java:383)
+	at org.sqlite.DB.newSQLException(DB.java:387)
+	at org.sqlite.DB.execute(DB.java:342)
+	at org.sqlite.DB.executeUpdate(DB.java:363)
+	at org.sqlite.PrepStmt.executeUpdate(PrepStmt.java:85)
+	at fms.dao.FMSDao.insert(FMSDao.java:84)
+	... 13 more
+
+Apr 18, 2018 6:39:42 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:47 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:49 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:51 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:51 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:51 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:51 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:39:51 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:39:51 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:39:51 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:40:01 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:40:01 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:40:01 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:40:01 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:40:01 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:40:01 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:40:01 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:40:44 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:40:44 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:40:46 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:40:46 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:40:46 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:42:22 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:42:23 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:42:46 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:42:46 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:42:46 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:42:46 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:42:46 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:42:46 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:42:46 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:42:51 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:42:51 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:42:53 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:42:53 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:42:53 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:02 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:02 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:43:02 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:12 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:14 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:15 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:15 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:15 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:15 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:15 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:15 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:43:15 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:29 PM FillHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:31 PM FillHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:34 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:34 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:34 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:34 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:43:34 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:43:34 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:43:34 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:46:04 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:46:04 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:46:04 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:46:04 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:46:05 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:46:05 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:46:05 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:46:15 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:46:15 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:46:18 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:46:18 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:46:18 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:13 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:13 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:49:13 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:23 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:25 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:25 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:25 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:25 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:25 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:25 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:25 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:49:25 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:32 PM ClearHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:32 PM ClearHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:34 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:34 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:49:34 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:36 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:36 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:49:36 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:49:37 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:49:37 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:49:37 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:50:28 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:50:28 PM fms.service.LoginService login
+SEVERE: Users login information incorrect
+fms.dao.DatabaseException: Users login information incorrect
+	at fms.dao.UsersDao.verify(UsersDao.java:80)
+	at fms.service.LoginService.login(LoginService.java:25)
+	at fms.handler.LoginHandler.handle(LoginHandler.java:31)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.AuthFilter.doFilter(AuthFilter.java:83)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:82)
+	at sun.net.httpserver.ServerImpl$Exchange$LinkHandler.handle(ServerImpl.java:675)
+	at com.sun.net.httpserver.Filter$Chain.doFilter(Filter.java:79)
+	at sun.net.httpserver.ServerImpl$Exchange.run(ServerImpl.java:647)
+	at sun.net.httpserver.ServerImpl$DefaultExecutor.execute(ServerImpl.java:158)
+	at sun.net.httpserver.ServerImpl$Dispatcher.handle(ServerImpl.java:431)
+	at sun.net.httpserver.ServerImpl$Dispatcher.run(ServerImpl.java:396)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.sql.SQLException: ResultSet closed
+	at org.sqlite.RS.checkOpen(RS.java:63)
+	at org.sqlite.RS.markCol(RS.java:77)
+	at org.sqlite.RS.getString(RS.java:313)
+	at fms.dao.UsersDao.verify(UsersDao.java:75)
+	... 12 more
+
+Apr 18, 2018 6:50:28 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:50:43 PM RegisterHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:50:45 PM RegisterHandler handle
+FINER: RETURN
+Apr 18, 2018 6:50:47 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:50:47 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 6:50:47 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:50:47 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 6:50:47 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 6:50:47 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 6:50:47 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 7:02:45 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:02:45 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 7:02:45 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:02:45 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 7:02:45 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:02:45 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 7:02:45 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:04:47 PM fms.handler.DefaultFileHandler handle
+INFO: web/index.html
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:04:47 PM fms.handler.DefaultFileHandler handle
+INFO: web/css/main.css
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:04:47 PM fms.handler.DefaultFileHandler handle
+INFO: web/favicon.ico
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:04:47 PM fms.handler.DefaultFileHandler handle
+INFO: web/favicon.ico
+Apr 18, 2018 7:04:47 PM DefaultFileHandler handle
+FINER: RETURN
+Apr 18, 2018 7:04:53 PM LoadHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:04:53 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 7:04:53 PM LoadHandler handle
+FINER: RETURN
+Apr 18, 2018 7:06:18 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:06:18 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 7:06:18 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:06:18 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 7:06:18 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:06:18 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 7:06:18 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 7:07:37 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:07:37 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 7:07:37 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:07:37 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 7:07:37 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:07:37 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 7:07:37 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:05 PM FillHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:06 PM FillHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:08 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:08 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:08 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:08 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:08 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:08 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 7:10:08 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:14 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:14 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:14 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:14 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:14 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:14 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 7:10:14 PM PersonHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:22 PM LoadHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:22 PM fms.service.LoadService load
+INFO: 11
+Apr 18, 2018 7:10:23 PM LoadHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:25 PM LoginHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:25 PM LoginHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:25 PM EventHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:25 PM EventsHandler handle
+FINER: RETURN
+Apr 18, 2018 7:10:25 PM PersonHandler handle
+FINER: ENTRY
+Apr 18, 2018 7:10:25 PM fms.dao.PersonsDao getAll
+INFO: getAll called
+Apr 18, 2018 7:10:25 PM PersonHandler handle
 FINER: RETURN

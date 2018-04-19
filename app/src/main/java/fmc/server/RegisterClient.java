@@ -11,13 +11,14 @@ import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import fmshared.fmrequest.LoginRequest;
 import fmshared.fmresult.RegisterResult;
 
 class RegisterClient {
 
     private static Gson gson = new Gson();
 
-    String getUrl(URL url, String reqBody) throws Exception {
+    RegisterResult getUrl(URL url, String reqBody) throws Exception {
         Log.d("Debug", "getURL Register called");
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();
         connection.setDoInput(true);
@@ -49,7 +50,7 @@ class RegisterClient {
                 Log.d("Debug", "BAD REQUEST MAN!!!");
                 throw new Exception();
             }
-            return regRes.getDataReqInfo();
+            return regRes;
         }
         return null;
     }

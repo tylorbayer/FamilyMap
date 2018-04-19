@@ -18,6 +18,7 @@ import com.joanzapata.iconify.fonts.FontAwesomeIcons;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 import fmc.model.Model;
@@ -49,17 +50,21 @@ public class PersonActivity extends Activity {
 
         ArrayList<ParentObject> parentObjects = new ArrayList<>();
 
-        ArrayList<Object> eventsChildList = new ArrayList<>();
+        ArrayList<DataChild> originChildList = new ArrayList<>();
         for (Events event: events) {
             if (event.getPersonID().equals(currentPerson.getPersonID())) {
                 Drawable eventIcon = new IconDrawable(this, FontAwesomeIcons.fa_map_marker).colorRes(R.color.grey).sizeDp(25);
-                DataChild eventsDataChild = new DataChild(event.getEventType() + ": " + event.getCity() +
+                DataChild eventsDataChild = new DataChild(event.getEventType().toLowerCase() + ": " + event.getCity() +
                         ", " + event.getCountry() + " (" + event.getYear() + ")", currentPerson.getFirstName() +
                 " " + currentPerson.getLastName(), eventIcon, event);
 
-                eventsChildList.add(eventsDataChild);
+                originChildList.add(eventsDataChild);
             }
         }
+
+        ArrayList<Object> eventsChildList = new ArrayList<>();
+        eventsChildList.addAll(originChildList);
+
         Data eventsData = new Data("Life Events", eventsChildList);
         parentObjects.add(eventsData);
 
@@ -81,7 +86,7 @@ public class PersonActivity extends Activity {
                 DataChild personDataChild = new DataChild(person.getFirstName() + " " + person.getLastName(), "Mother", personIcon, person);
                 personsChildList.add(personDataChild);
             }
-            if (person.getFatherID().equals(currentPerson.getPersonID()) || person.getMotherID().equals(currentPerson.getPersonID())) {
+            else if (person.getFatherID().equals(currentPerson.getPersonID()) || person.getMotherID().equals(currentPerson.getPersonID())) {
                 personIcon = getDrawable(person.getGender());
                 DataChild personDataChild = new DataChild(person.getFirstName() + " " + person.getLastName(), "Child", personIcon, person);
                 personsChildList.add(personDataChild);

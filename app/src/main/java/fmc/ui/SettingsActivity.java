@@ -115,6 +115,7 @@ public class SettingsActivity extends Activity implements AdapterView.OnItemSele
             @Override
             public void onClick(View v) {
                 Intent mainActivity = new Intent(v.getContext(), MainActivity.class);
+                mainActivity.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 mainActivity.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(mainActivity);
             }

@@ -20,11 +20,11 @@ public class Persons extends FMSModel implements Serializable {
     /** Person's gender */
     private String gender;
     /** ID of person's father */
-    private String father;
+    private String father = "";
     /** ID of person's mother */
-    private String mother;
+    private String mother = "";
     /** ID of person's spouse */
-    private String spouse;
+    private String spouse = "";
 
 
     /** Constructor for use within FMS
